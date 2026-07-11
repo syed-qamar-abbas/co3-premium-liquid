@@ -1,0 +1,1 @@
+<?php require __DIR__ . '/lib/app.php'; logout(); redirect('login.php');

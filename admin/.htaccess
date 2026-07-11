@@ -1,0 +1,13 @@
+# CO3 Admin — hardening
+Options -Indexes
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Never serve the database or raw data files
+<FilesMatch "\.(sqlite|sqlite-wal|sqlite-shm|db)$">
+  Require all denied
+</FilesMatch>

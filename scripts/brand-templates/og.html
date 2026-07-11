@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    position: relative; display: flex; align-items: center;
+    font-family: "Helvetica Neue", Arial, sans-serif; color: #FFFDF8;
+    background: radial-gradient(circle at 50% -10%, #016873 0%, #014851 48%, #013A41 100%);
+  }
+  .bubble {
+    position: absolute; border-radius: 9999px;
+    background: radial-gradient(circle at 32% 28%, rgba(255,255,255,0.9), rgba(212,165,55,0.25) 45%, rgba(0,95,104,0.12) 75%);
+    box-shadow: inset 0 0 18px rgba(255,255,255,0.5);
+  }
+  .b1 { width: 180px; height: 180px; left: 40px; top: -50px; opacity: .3; }
+  .b2 { width: 90px;  height: 90px;  left: 250px; bottom: 60px; opacity: .25; }
+  .b3 { width: 60px;  height: 60px;  left: 120px; bottom: 130px; opacity: .22; }
+  .glow { position: absolute; right: -80px; bottom: -120px; width: 420px; height: 420px;
+          border-radius: 9999px; background: rgba(212,165,55,0.14); filter: blur(60px); }
+  .left { position: relative; padding: 0 64px; flex: 1.3; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .mono {
+    width: 56px; height: 56px; border-radius: 9999px; border: 1.5px solid rgba(212,165,55,0.6);
+    display: flex; align-items: center; justify-content: center;
+    font-family: Georgia, serif; font-weight: 700; font-size: 22px; color: #D4A537;
+  }
+  .brandtext { font-size: 13px; letter-spacing: .3em; text-transform: uppercase; color: rgba(244,240,230,.8); }
+  .eyebrow { margin-top: 30px; font-size: 15px; letter-spacing: .26em; text-transform: uppercase; color: #D4A537; font-weight: 600; }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif; font-weight: 800;
+    font-size: 88px; line-height: .94; margin-top: 14px; letter-spacing: -1.5px;
+  }
+  h1 .gold { color: #D4A537; }
+  .sub { font-size: 23px; line-height: 1.45; color: rgba(244,240,230,.82); margin-top: 22px; max-width: 560px; }
+  .meta { margin-top: 26px; display: flex; align-items: center; gap: 20px; font-size: 17px; color: rgba(244,240,230,.75); }
+  .stars { color: #D4A537; letter-spacing: 2px; }
+  .right { position: relative; flex: 1; display: flex; align-items: center; justify-content: center; }
+  .ring { position: absolute; width: 360px; height: 360px; border-radius: 9999px; border: 1.5px dashed rgba(212,165,55,0.35); }
+  .disc {
+    width: 300px; height: 300px; border-radius: 9999px; border: 1.5px solid rgba(212,165,55,0.4);
+    background: linear-gradient(135deg,#016873,#013A41);
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 30px 80px -30px rgba(1,58,65,0.8);
+  }
+  .cup { font-size: 170px; line-height: 1; }
+</style>
+</head>
+<body>
+  <div class="bubble b1"></div><div class="bubble b2"></div><div class="bubble b3"></div>
+  <div class="glow"></div>
+  <div class="left">
+    <div class="brand"><div class="mono">C3</div><div class="brandtext">CO3 Premium Liquid Shop</div></div>
+    <div class="eyebrow">Rawalpindi · Bubble Tea · Coffee · Ice Cream</div>
+    <h1>Scoops Into<br><span class="gold">Happiness.</span></h1>
+    <div class="sub">Premium bubble teas, handcrafted coffee &amp; luxury ice cream — crafted fresh, ordered on WhatsApp.</div>
+    <div class="meta"><span class="stars">★★★★★</span> 4.9 · 1000+ orders &nbsp;·&nbsp; 0303 6303111</div>
+  </div>
+  <div class="right">
+    <div class="ring"></div>
+    <div class="disc"><div class="cup">🧋</div></div>
+  </div>
+</body>
+</html>

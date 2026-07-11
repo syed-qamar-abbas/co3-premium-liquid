@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1350px; overflow: hidden; }
+  body {
+    position: relative;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #FFFDF8;
+    background:
+      radial-gradient(circle at 78% 8%, __ACCENT__ 0%, #014851 52%, #013A41 100%);
+  }
+  .bubble {
+    position: absolute; border-radius: 9999px;
+    background: radial-gradient(circle at 32% 28%, rgba(255,255,255,0.9), rgba(212,165,55,0.25) 45%, rgba(0,95,104,0.12) 75%);
+    box-shadow: inset 0 0 22px rgba(255,255,255,0.5);
+  }
+  .b1 { width: 260px; height: 260px; left: -70px; bottom: 120px; opacity: .35; }
+  .b2 { width: 150px; height: 150px; left: 120px; bottom: 360px; opacity: .28; }
+  .b3 { width: 90px;  height: 90px;  left: 70px;  bottom: 620px; opacity: .25; }
+  .b4 { width: 120px; height: 120px; right: 90px; bottom: 250px; opacity: .22; }
+  .watermark {
+    position: absolute; top: 40px; right: 36px; font-size: 360px; line-height: 1;
+    opacity: .14; filter: grayscale(.1);
+  }
+  .frame { position: absolute; inset: 36px; border: 1.5px solid rgba(212,165,55,0.45); border-radius: 40px; }
+  .wrap { position: relative; height: 100%; padding: 96px 92px; display: flex; flex-direction: column; }
+  .brand { display: flex; align-items: center; gap: 16px; }
+  .mono {
+    width: 64px; height: 64px; border-radius: 9999px; border: 1.5px solid rgba(212,165,55,0.6);
+    display: flex; align-items: center; justify-content: center;
+    font-family: Georgia, serif; font-weight: 700; font-size: 26px; color: #D4A537;
+  }
+  .brandtext { font-size: 15px; letter-spacing: .32em; text-transform: uppercase; color: rgba(244,240,230,.8); }
+  .badge {
+    margin-top: auto; align-self: flex-start;
+    border: 1.5px solid rgba(212,165,55,0.55); border-radius: 9999px;
+    padding: 12px 26px; font-size: 19px; letter-spacing: .22em; text-transform: uppercase;
+    color: #D4A537; font-weight: 600;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif; font-weight: 800;
+    font-size: 120px; line-height: .92; margin-top: 26px; letter-spacing: -2px;
+  }
+  .sub { font-family: Georgia, serif; font-size: 42px; color: #D4A537; margin-top: 18px; }
+  .body { font-size: 27px; line-height: 1.5; color: rgba(244,240,230,.82); margin-top: 28px; max-width: 720px; }
+  .cta {
+    margin-top: 40px; display: flex; align-items: center; gap: 20px;
+  }
+  .pill {
+    background: #25D366; color: #fff; font-weight: 700; font-size: 27px;
+    padding: 22px 38px; border-radius: 9999px; display: inline-flex; align-items: center; gap: 14px;
+  }
+  .phone { font-size: 27px; color: #FFFDF8; font-weight: 600; }
+  .code { margin-top: 26px; font-size: 20px; color: rgba(244,240,230,.6); letter-spacing: .04em; }
+  .rule { width: 96px; height: 3px; background: linear-gradient(90deg,#D4A537,transparent); margin-top: 20px; }
+</style>
+</head>
+<body>
+  <div class="bubble b1"></div><div class="bubble b2"></div>
+  <div class="bubble b3"></div><div class="bubble b4"></div>
+  <div class="watermark">__EMOJI__</div>
+  <div class="frame"></div>
+  <div class="wrap">
+    <div class="brand">
+      <div class="mono">C3</div>
+      <div class="brandtext">CO3 Premium Liquid Shop</div>
+    </div>
+    <div class="badge">__BADGE__</div>
+    <h1>__TITLE__</h1>
+    <div class="sub">__SUB__</div>
+    <div class="rule"></div>
+    <div class="body">__BODY__</div>
+    <div class="cta">
+      <span class="pill">▶ Order on WhatsApp</span>
+      <span class="phone">0303 6303111</span>
+    </div>
+    <div class="code">__CODE__</div>
+  </div>
+</body>
+</html>

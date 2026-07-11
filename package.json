@@ -1,0 +1,35 @@
+{
+  "name": "co3-premium-liquid-shop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CO3 Premium Liquid Shop — Luxury website. Premium bubble tea, ice cream, coffee & signature drinks in Rawalpindi.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "cross-env NODE_ENV=production next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "cross-env NODE_ENV=production next build",
+    "serve": "npx serve out",
+    "images": "bash scripts/convert-images.sh",
+    "graphics": "bash scripts/gen-brand-graphics.sh",
+    "gallery": "bash scripts/build-gallery.sh"
+  },
+  "dependencies": {
+    "framer-motion": "^11.3.0",
+    "lenis": "^1.1.13",
+    "next": "14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "swiper": "^11.1.9"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "cross-env": "^10.1.0",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7",
+    "typescript": "^5.5.4"
+  }
+}

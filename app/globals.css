@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ════════════════════════════════════════════════════════════════
+   CO3 Premium Liquid Shop — Global styles & luxury animation layer
+   ════════════════════════════════════════════════════════════════ */
+
+:root {
+  --teal: #005f68;
+  --teal-dark: #014851;
+  --cream: #f4f0e6;
+  --cream-warm: #fffdf8;
+  --gold: #d4a537;
+  --ink: #111111;
+  --nav-h: 76px;
+  /* Keep the brand families offline-safe for static export builds. If the
+     named family exists on the host/device it is used; the fallbacks keep
+     layout stable when it does not. */
+  --font-playfair: 'Playfair Display';
+  --font-montserrat: 'Montserrat';
+  --font-allura: 'Allura';
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+  }
+
+  /* Lenis controls scrolling; disable native smooth-scroll when active */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-cream text-ink font-body antialiased;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background: var(--gold);
+    color: #111;
+  }
+
+  /* Gold luxury scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--cream);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--gold), var(--teal));
+    border-radius: 99px;
+  }
+}
+
+@layer components {
+  .container-luxe {
+    @apply mx-auto w-full max-w-container px-5 sm:px-8 lg:px-12;
+  }
+
+  .eyebrow {
+    @apply font-body text-xs font-semibold uppercase tracking-luxe text-gold;
+  }
+
+  /* ── Buttons ─────────────────────────────────────────────── */
+  .btn {
+    @apply relative inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5
+           font-body text-sm font-semibold tracking-wide transition-all duration-500 ease-luxe;
+  }
+  .btn-gold {
+    @apply btn bg-gold text-ink shadow-gold hover:shadow-lift;
+  }
+  .btn-gold:hover {
+    transform: translateY(-2px);
+  }
+  .btn-teal {
+    @apply btn bg-teal text-cream-warm hover:bg-teal-dark;
+  }
+  .btn-outline {
+    @apply btn border border-teal/30 bg-transparent text-teal hover:border-teal hover:bg-teal hover:text-cream-warm;
+  }
+  .btn-whatsapp {
+    @apply btn bg-[#25D366] text-white shadow-gold hover:brightness-105;
+  }
+
+  /* ── Glass card with reflection sweep ────────────────────── */
+  .glass-card {
+    @apply relative overflow-hidden rounded-3xl border border-white/40
+           bg-white/55 shadow-glass backdrop-blur-md;
+  }
+  .glass-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      130deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.55) 48%,
+      rgba(255, 255, 255, 0) 60%
+    );
+    transform: translateX(-130%);
+    transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    pointer-events: none;
+  }
+  .glass-card:hover::before {
+    transform: translateX(130%);
+  }
+
+  /* Photos and type carry the interaction on touch devices; avoid keeping
+     hover-only reflection layers alive on mobile GPUs. */
+  @media (hover: none) {
+    .glass-card::before,
+    .glass-card:hover::before {
+      display: none;
+    }
+  }
+
+  /* ── Gold shimmer text ───────────────────────────────────── */
+  .text-shimmer {
+    background: linear-gradient(
+      110deg,
+      var(--gold) 20%,
+      #f6e4ad 40%,
+      #fffdf8 50%,
+      #f6e4ad 60%,
+      var(--gold) 80%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 4.5s linear infinite;
+  }
+
+  /* ── Hairline gold divider ───────────────────────────────── */
+  .divider-gold {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(212, 165, 55, 0.6),
+      transparent
+    );
+  }
+
+  /* ── Section background variants ─────────────────────────── */
+  .bg-teal-luxe {
+    background: radial-gradient(circle at 50% -10%, #016873, #014851 55%, #013a41);
+  }
+
+  .underline-gold {
+    background-image: linear-gradient(var(--gold), var(--gold));
+    background-size: 0% 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .underline-gold:hover {
+    background-size: 100% 2px;
+  }
+}
+
+@layer utilities {
+  /* Floating bubble (used by FloatingBubbles component) */
+  .bubble {
+    position: absolute;
+    bottom: -10%;
+    border-radius: 9999px;
+    background: radial-gradient(
+      circle at 30% 25%,
+      rgba(255, 255, 255, 0.9),
+      rgba(212, 165, 55, 0.25) 45%,
+      rgba(0, 95, 104, 0.15) 75%
+    );
+    box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.6);
+    animation: floatUp linear infinite;
+    will-change: transform, opacity;
+  }
+
+  /* Steam wisp (used by SteamParticles component) */
+  .steam {
+    position: absolute;
+    bottom: 0;
+    width: 14px;
+    height: 90px;
+    background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0)
+    );
+    border-radius: 50%;
+    filter: blur(6px);
+    animation: steam ease-out infinite;
+    will-change: transform, opacity;
+  }
+
+  .perspective {
+    perspective: 1200px;
+  }
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 639px) {
+  .bubble,
+  .steam {
+    animation: none !important;
+    display: none;
+  }
+}

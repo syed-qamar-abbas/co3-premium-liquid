@@ -1,0 +1,15 @@
+{
+  "name": "CO3 Premium Liquid Shop",
+  "short_name": "CO3",
+  "description": "Premium bubble tea, ice cream, coffee & signature drinks in Rawalpindi. Order on WhatsApp.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4F0E6",
+  "theme_color": "#005F68",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/admin/icon.php?size=192", "sizes": "192x192", "type": "image/png" },
+    { "src": "/admin/icon.php?size=512", "sizes": "512x512", "type": "image/png" },
+    { "src": "/admin/icon.php?size=512&maskable=1", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

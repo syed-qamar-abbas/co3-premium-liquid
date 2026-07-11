@@ -1,0 +1,45 @@
+# CO3 Premium Liquid Shop — robots.txt
+# Allow everything, including AI crawlers (we WANT to be cited by LLMs/SGE).
+
+User-agent: *
+Allow: /
+
+# Explicitly welcome the major AI / answer-engine crawlers (LLMO/GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Host: https://co3premium.com
+Sitemap: https://co3premium.com/sitemap.xml

@@ -1,0 +1,1239 @@
+{
+  "products": [
+    {
+      "id": "boba-milk-tea",
+      "name": "Boba Milk Tea",
+      "slug": "boba-milk-tea",
+      "category": "boba",
+      "tagline": "The one everyone comes back for.",
+      "description": "Our signature hand-shaken milk tea, loaded with chewy brown-sugar pearls. Six ways to love it — from classic Coffee to fruity Blueberry and Strawberry.",
+      "ingredients": [
+        "Premium tea",
+        "Fresh milk",
+        "Brown-sugar pearls"
+      ],
+      "flavors": [
+        "Coffee",
+        "Vanilla",
+        "Caramel",
+        "Blueberry",
+        "Chocolate",
+        "Strawberry"
+      ],
+      "sizes": [
+        {
+          "label": "Small",
+          "price": 550
+        },
+        {
+          "label": "Large",
+          "price": 700
+        }
+      ],
+      "toppings": [
+        "Extra pearls",
+        "Cheese foam"
+      ],
+      "badges": [
+        "bestseller",
+        "signature"
+      ],
+      "accent": "#C56B7A",
+      "emoji": "🧋",
+      "image": "/images/products-enhanced/boba-milk-tea.webp"
+    },
+    {
+      "id": "iced-matcha",
+      "name": "Iced Matcha",
+      "slug": "iced-matcha",
+      "category": "matcha",
+      "tagline": "Ceremonial-grade green, poured over cold.",
+      "description": "Stone-ground ceremonial matcha whisked to a jade froth over chilled milk and ice. Available in six flavours — the Tokyo-café experience, made fresh in Rawalpindi.",
+      "ingredients": [
+        "Ceremonial matcha",
+        "Fresh milk",
+        "Ice"
+      ],
+      "flavors": [
+        "Strawberry Iced Matcha",
+        "Blueberry Iced Matcha",
+        "Chocolate Iced Matcha",
+        "Caramel Iced Matcha",
+        "Vanilla Iced Matcha",
+        "Coffee Iced Matcha"
+      ],
+      "sizes": [
+        {
+          "label": "Regular",
+          "price": 800
+        }
+      ],
+      "toppings": [
+        "Matcha cold foam",
+        "Tapioca pearls"
+      ],
+      "badges": [
+        "signature",
+        "bestseller"
+      ],
+      "accent": "#6E8B3D",
+      "emoji": "🍵",
+      "image": "/images/products-enhanced/iced-matcha.webp"
+    },
+    {
+      "id": "hot-matcha",
+      "name": "Hot Matcha",
+      "slug": "hot-matcha",
+      "category": "matcha",
+      "tagline": "Whisked warmth, jade and gold.",
+      "description": "Ceremonial matcha whisked with steamed milk into a comforting, grassy-sweet latte. A calmer, antioxidant-rich alternative to coffee.",
+      "ingredients": [
+        "Ceremonial matcha",
+        "Steamed milk"
+      ],
+      "sizes": [
+        {
+          "label": "Regular",
+          "price": 800
+        }
+      ],
+      "accent": "#5F7A3A",
+      "emoji": "🍵",
+      "image": "/images/products-enhanced/hot-matcha.webp"
+    },
+    {
+      "id": "iced-coffee",
+      "name": "Iced Coffee",
+      "slug": "iced-coffee",
+      "category": "iced-coffee",
+      "tagline": "Cold, smooth, seriously good.",
+      "description": "Espresso poured over ice and fresh milk. Choose your style — clean Iced Americano, creamy Iced Latte, sweet Iced Spanish, Oreo, Mocha, Caramel, Hazelnut or French Vanilla.",
+      "ingredients": [
+        "Single-origin espresso",
+        "Fresh milk",
+        "Ice"
+      ],
+      "flavors": [
+        "Iced Americano",
+        "Iced Latte / Cappuccino",
+        "Iced Spanish Latte",
+        "Iced Oreo",
+        "Iced Mocha",
+        "Iced Caramel",
+        "Iced Hazelnut",
+        "Iced French Vanilla"
+      ],
+      "sizes": [
+        {
+          "label": "Iced Americano",
+          "price": 290
+        },
+        {
+          "label": "Iced Latte / Cappuccino",
+          "price": 400
+        },
+        {
+          "label": "Iced Spanish Latte",
+          "price": 600
+        },
+        {
+          "label": "Iced Oreo / Mocha / Caramel / Hazelnut / French Vanilla",
+          "price": 500
+        }
+      ],
+      "badges": [
+        "bestseller"
+      ],
+      "accent": "#7A5230",
+      "emoji": "🧊",
+      "image": "/images/products-enhanced/iced-coffee.webp"
+    },
+    {
+      "id": "hot-americano",
+      "name": "Americano",
+      "slug": "americano",
+      "category": "hot-coffee",
+      "tagline": "Pure espresso, lengthened.",
+      "description": "Our house espresso pulled long over hot water — bold, clean and honest.",
+      "ingredients": [
+        "Double espresso",
+        "Hot water"
+      ],
+      "sizes": [
+        {
+          "label": "Regular",
+          "price": 290
+        }
+      ],
+      "accent": "#4A3322",
+      "emoji": "☕",
+      "image": "/images/products-enhanced/americano.webp"
+    },
+    {
+      "id": "latte-cappuccino",
+      "name": "Latte / Cappuccino",
+      "slug": "latte-cappuccino",
+      "category": "hot-coffee",
+      "tagline": "Espresso under a cloud of microfoam.",
+      "description": "Single-origin espresso and properly steamed milk — a silky latte or a classic, cocoa-dusted cappuccino. Your call.",
+      "ingredients": [
+        "Double espresso",
+        "Steamed milk",
+        "Microfoam"
+      ],
+      "flavors": [
+        "Latte",
+        "Cappuccino"
+      ],
+      "sizes": [
+        {
+          "label": "Regular",
+          "price": 400
+        }
+      ],
+      "badges": [
+        "bestseller"
+      ],
+      "accent": "#8B5E34",
+      "emoji": "☕",
+      "image": "/images/products-enhanced/latte-cappuccino.webp"
+    },
+    {
+      "id": "spanish-latte",
+      "name": "Spanish Latte",
+      "slug": "spanish-latte",
+      "category": "hot-coffee",
+      "tagline": "Sweet, silky, sun-warmed.",
+      "description": "Double espresso married with condensed and steamed milk for a dessert-smooth latte with a golden caramel edge. Our most-loved coffee.",
+      "ingredients": [
+        "Double espresso",
+        "Condensed milk",
+        "Steamed milk"
+      ],
+      "sizes": [
+        {
+          "label": "Regular",
+          "price": 600
+        }
+      ],
+      "badges": [
+        "signature"
+      ],
+      "accent": "#7A5230",
+      "emoji": "☕",
+      "image": "/images/products-enhanced/spanish-latte.webp"
+    },
+    {
+      "id": "flavoured-latte",
+      "name": "Flavoured Latte",
+      "slug": "flavoured-latte",
+      "category": "hot-coffee",
+      "tagline": "Your latte, your way.",
+      "description": "A smooth latte built on your favourite flavour — rich Mocha, buttery Caramel, nutty Hazelnut or sweet French Vanilla.",
+      "ingredients": [
+        "Espresso",
+        "Steamed milk",
+        "Flavour syrup"
+      ],
+      "flavors": [
+        "Mocha Latte",
+        "Caramel Latte",
+        "Hazelnut Latte",
+        "French Vanilla Latte"
+      ],
+      "sizes": [
+        {
+          "label": "Regular",
+          "price": 500
+        }
+      ],
+      "accent": "#6F4A2B",
+      "emoji": "☕",
+      "image": "/images/products-enhanced/flavoured-latte.webp"
+    },
+    {
+      "id": "hot-chocolate",
+      "name": "Hot Chocolate",
+      "slug": "hot-chocolate",
+      "category": "hot-coffee",
+      "tagline": "A warm hug in a cup.",
+      "description": "Rich, velvety hot chocolate made with real cocoa and steamed milk.",
+      "ingredients": [
+        "Cocoa",
+        "Steamed milk",
+        "Sugar"
+      ],
+      "sizes": [
+        {
+          "label": "Regular",
+          "price": 400
+        }
+      ],
+      "accent": "#3A2418",
+      "emoji": "🍫",
+      "image": "/images/products-enhanced/hot-chocolate.webp"
+    },
+    {
+      "id": "ice-cream-scoops",
+      "name": "Premium Ice Cream",
+      "slug": "ice-cream",
+      "category": "ice-cream",
+      "tagline": "Premium · rich · indulgent.",
+      "description": "Slow-churned, eleven ways. From deep Chocolate Velvet and Nutty Pistachio to Royal Kulfa and Coconut Pearl. Single scoop or double — choose free toppings from the printed menu.",
+      "ingredients": [
+        "Fresh cream",
+        "Milk",
+        "Real ingredients"
+      ],
+      "flavors": [
+        "Chocolate Velvet",
+        "Coconut Pearl",
+        "Coffee Treat",
+        "Strawberry Delight",
+        "Mango Magic",
+        "Vanilla Dream",
+        "Praline Crunch",
+        "Choco Chip Rush",
+        "Royal Kulfa",
+        "Tutti Frutti",
+        "Nutty Pistachio"
+      ],
+      "sizes": [
+        {
+          "label": "Single scoop",
+          "price": 150
+        },
+        {
+          "label": "Double scoop",
+          "price": 300
+        }
+      ],
+      "toppings": [
+        "Rainbow sprinkles",
+        "Chocolate sprinkles",
+        "Dark choco chips",
+        "White choco chips",
+        "Bunty beans"
+      ],
+      "badges": [
+        "bestseller",
+        "signature"
+      ],
+      "accent": "#B05B3B",
+      "emoji": "🍨",
+      "image": "/images/products-enhanced/ice-cream.webp"
+    },
+    {
+      "id": "boba-ice-cream-cup",
+      "name": "Boba Ice Cream Cup",
+      "slug": "boba-ice-cream-cup",
+      "category": "boba-ice-cream",
+      "tagline": "Ice cream meets popping boba.",
+      "description": "A scoop of creamy ice cream loaded with bursting fruit popping boba. Six fruity flavours — as fun to eat as it looks.",
+      "ingredients": [
+        "Ice cream",
+        "Fruit popping boba"
+      ],
+      "flavors": [
+        "Lychee",
+        "Strawberry",
+        "Blueberry",
+        "Green Apple",
+        "Peach",
+        "Pineapple"
+      ],
+      "sizes": [
+        {
+          "label": "Cup",
+          "price": 350
+        }
+      ],
+      "badges": [
+        "new"
+      ],
+      "accent": "#9B7CB8",
+      "emoji": "🍧",
+      "image": "/images/products-enhanced/boba-ice-cream-cup.webp"
+    },
+    {
+      "id": "signature-shakes",
+      "name": "Signature Shakes",
+      "slug": "signature-shakes",
+      "category": "shakes",
+      "tagline": "Thick, loaded, legendary.",
+      "description": "Our showstopper shakes — blended thick and crowned with the good stuff. Oreo, KitKat, Bounty, Nutella, Snickers, Brownie and more.",
+      "ingredients": [
+        "Ice cream",
+        "Fresh milk",
+        "Whipped cream",
+        "Chocolate"
+      ],
+      "flavors": [
+        "Oreo",
+        "Mars",
+        "KitKat",
+        "Bounty",
+        "Nutella",
+        "Cadbury",
+        "Snickers",
+        "Salted Caramel",
+        "Nutella Brownie"
+      ],
+      "sizes": [
+        {
+          "label": "Small",
+          "price": 500
+        },
+        {
+          "label": "Large",
+          "price": 700
+        }
+      ],
+      "badges": [
+        "bestseller",
+        "signature"
+      ],
+      "accent": "#5A3B22",
+      "emoji": "🥤",
+      "image": "/images/products-enhanced/signature-shakes.webp"
+    },
+    {
+      "id": "ice-cream-shakes",
+      "name": "Ice Cream Shakes",
+      "slug": "ice-cream-shakes",
+      "category": "shakes",
+      "tagline": "Spoon-thick and cold.",
+      "description": "Real ice cream blended into a thick, dreamy shake. Choose from classic fruit, coffee and premium scoop flavours.",
+      "ingredients": [
+        "Ice cream",
+        "Fresh milk"
+      ],
+      "flavors": [
+        "Mango",
+        "Coffee",
+        "Vanilla",
+        "Coconut",
+        "Pistachio",
+        "Chocolate",
+        "Tutti Frutti",
+        "Strawberry",
+        "Royal Kulfa",
+        "Chocolate Chip",
+        "Praline Crunch"
+      ],
+      "sizes": [
+        {
+          "label": "Small",
+          "price": 400
+        },
+        {
+          "label": "Large",
+          "price": 600
+        }
+      ],
+      "accent": "#C08A5A",
+      "emoji": "🥤",
+      "image": "/images/products-enhanced/ice-cream-scoop-shakes.webp"
+    },
+    {
+      "id": "ice-cream-scoop-shakes",
+      "name": "Ice Cream Shakes with Scoop",
+      "slug": "ice-cream-scoop-shakes",
+      "category": "shakes",
+      "tagline": "Your shake, crowned with a scoop.",
+      "description": "The printed-menu scoop shake upgrade: a thick ice cream shake finished with a real scoop on top.",
+      "ingredients": [
+        "Ice cream",
+        "Fresh milk",
+        "Extra scoop"
+      ],
+      "flavors": [
+        "Chocolate Chip Scoop Shake",
+        "Praline Crunch Scoop Shake",
+        "Mango Scoop Shake",
+        "Coffee Scoop Shake",
+        "Vanilla Scoop Shake",
+        "Coconut Scoop Shake",
+        "Pistachio Scoop Shake",
+        "Chocolate Scoop Shake",
+        "Tutti Frutti Scoop Shake",
+        "Strawberry Scoop Shake",
+        "Royal Kulfa Scoop Shake"
+      ],
+      "sizes": [
+        {
+          "label": "Small",
+          "price": 550
+        },
+        {
+          "label": "Large",
+          "price": 750
+        }
+      ],
+      "badges": [
+        "signature"
+      ],
+      "accent": "#C08A5A",
+      "emoji": "🍨",
+      "image": "/images/products-enhanced/ice-cream-shakes.webp"
+    },
+    {
+      "id": "cold-frappe",
+      "name": "Cold Frappé",
+      "slug": "cold-frappe",
+      "category": "shakes",
+      "tagline": "Blended velvet with a crown of cream.",
+      "description": "Coffee blended to a frost and capped with cream. Oreo, Mocha, Nutella, Brownie, Caramel, Hazelnut or French Vanilla.",
+      "ingredients": [
+        "Espresso",
+        "Milk",
+        "Ice",
+        "Whipped cream"
+      ],
+      "flavors": [
+        "French Vanilla",
+        "Oreo",
+        "Mocha",
+        "Nutella",
+        "Brownie",
+        "Caramel",
+        "Hazelnut"
+      ],
+      "sizes": [
+        {
+          "label": "Regular",
+          "price": 590
+        }
+      ],
+      "badges": [
+        "bestseller"
+      ],
+      "accent": "#6B4A2F",
+      "emoji": "🥤",
+      "image": "/images/products-enhanced/cold-frappe.webp"
+    },
+    {
+      "id": "fresh-shakes",
+      "name": "Fresh Shakes",
+      "slug": "fresh-shakes",
+      "category": "shakes",
+      "tagline": "Real fruit, blended cold.",
+      "description": "Simple, fresh fruit shakes — strawberry, pineapple, mango, banana and apple blends made fresh.",
+      "ingredients": [
+        "Fresh fruit",
+        "Milk",
+        "Ice"
+      ],
+      "flavors": [
+        "Strawberry Pineapple",
+        "Strawberry Banana",
+        "Mango Banana",
+        "Apple Banana",
+        "Apple",
+        "Mango",
+        "Banana",
+        "Pineapple",
+        "Strawberry"
+      ],
+      "sizes": [
+        {
+          "label": "Small",
+          "price": 350
+        },
+        {
+          "label": "Large",
+          "price": 450
+        }
+      ],
+      "accent": "#E2952B",
+      "emoji": "🥤",
+      "image": "/images/products-enhanced/fresh-shakes.webp"
+    },
+    {
+      "id": "dry-fruit-shake",
+      "name": "Dry Fruit Shake",
+      "slug": "dry-fruit-shake",
+      "category": "shakes",
+      "tagline": "Loaded with the good stuff.",
+      "description": "A rich, nutty shake packed with premium dry fruits. Wholesome and indulgent.",
+      "ingredients": [
+        "Mixed dry fruits",
+        "Milk",
+        "Ice cream"
+      ],
+      "sizes": [
+        {
+          "label": "Small",
+          "price": 450
+        },
+        {
+          "label": "Large",
+          "price": 600
+        }
+      ],
+      "accent": "#8A6A45",
+      "emoji": "🥤",
+      "image": "/images/products-enhanced/dry-fruit-shake.webp"
+    },
+    {
+      "id": "bubble-soda",
+      "name": "Bubble Soda",
+      "slug": "bubble-soda",
+      "category": "bubble-soda",
+      "tagline": "Pop. Fizz. Good vibes.",
+      "description": "Sparkling fruit soda over fruit popping boba — tiny bubbles, big mood. Peach, Lychee, Pineapple, Blueberry, Strawberry or Green Apple.",
+      "ingredients": [
+        "Fruit syrup",
+        "Soda",
+        "Fruit popping boba",
+        "Ice"
+      ],
+      "flavors": [
+        "Peach",
+        "Lychee",
+        "Pineapple",
+        "Blueberry",
+        "Strawberry",
+        "Green Apple"
+      ],
+      "sizes": [
+        {
+          "label": "Small",
+          "price": 350
+        },
+        {
+          "label": "Large",
+          "price": 400
+        }
+      ],
+      "badges": [
+        "bestseller",
+        "new"
+      ],
+      "accent": "#E0A92E",
+      "emoji": "🫧",
+      "image": "/images/products-enhanced/bubble-soda.webp"
+    },
+    {
+      "id": "co3-soda",
+      "name": "CO3 Soda",
+      "slug": "co3-soda",
+      "category": "soda",
+      "tagline": "Fresh. Fizzy. You.",
+      "description": "Bright, bubbly and bold. The printed CO3 soda list: fruit, energy and classic fizzy flavours over ice.",
+      "ingredients": [
+        "Fruit syrup",
+        "Soda",
+        "Ice"
+      ],
+      "flavors": [
+        "Peach",
+        "Lychee",
+        "Orange",
+        "Fresh Up",
+        "High Volt",
+        "Pineapple",
+        "Blueberry",
+        "Blackberry",
+        "Strawberry",
+        "Green Apple",
+        "Pomegranate",
+        "Energy Drink",
+        "Blackcurrant"
+      ],
+      "sizes": [
+        {
+          "label": "Small",
+          "price": 140
+        },
+        {
+          "label": "Large",
+          "price": 180
+        }
+      ],
+      "accent": "#E2952B",
+      "emoji": "🥤",
+      "image": "/images/products-enhanced/co3-soda.webp"
+    },
+    {
+      "id": "slush",
+      "name": "Slush",
+      "slug": "slush",
+      "category": "soda",
+      "tagline": "Ice-cold and electric.",
+      "description": "Frozen fruit slush in five vivid flavours. The ultimate summer chill.",
+      "ingredients": [
+        "Fruit syrup",
+        "Crushed ice"
+      ],
+      "flavors": [
+        "Orange",
+        "Pineapple",
+        "Blueberry",
+        "Green Apple",
+        "Strawberry"
+      ],
+      "sizes": [
+        {
+          "label": "Small",
+          "price": 250
+        },
+        {
+          "label": "Large",
+          "price": 350
+        }
+      ],
+      "badges": [
+        "seasonal"
+      ],
+      "accent": "#2F8F6B",
+      "emoji": "🧊",
+      "image": "/images/products-enhanced/slush.webp"
+    },
+    {
+      "id": "doodh-soda",
+      "name": "Doodh Soda",
+      "slug": "doodh-soda",
+      "category": "soda",
+      "tagline": "Creamy, fizzy nostalgia.",
+      "description": "The desi favourite — chilled milk soda. Pakola Milk Soda or Red Rose Milk Soda.",
+      "ingredients": [
+        "Fresh milk",
+        "Soda",
+        "Rooh Afza / syrup"
+      ],
+      "flavors": [
+        "Pakola Milk Soda",
+        "Red Rose Milk Soda"
+      ],
+      "sizes": [
+        {
+          "label": "Regular",
+          "price": 360
+        }
+      ],
+      "accent": "#C98B8B",
+      "emoji": "🥛",
+      "image": "/images/products-enhanced/doodh-soda.webp"
+    },
+    {
+      "id": "mocktail-soda",
+      "name": "Mocktail Soda",
+      "slug": "mocktail-soda",
+      "category": "soda",
+      "tagline": "Not alcohol, all vibes.",
+      "description": "Fizzy, fun mocktail sodas that hit different. Blue Lagoon, Lemon Blast, Golden Rush or Peach Blossom.",
+      "ingredients": [
+        "Fruit syrup",
+        "Soda",
+        "Mint",
+        "Ice"
+      ],
+      "flavors": [
+        "Blue Lagoon",
+        "Lemon Blast",
+        "Golden Rush",
+        "Peach Blossom"
+      ],
+      "sizes": [
+        {
+          "label": "Small",
+          "price": 180
+        },
+        {
+          "label": "Large",
+          "price": 220
+        }
+      ],
+      "badges": [
+        "bestseller"
+      ],
+      "accent": "#1E7FB8",
+      "emoji": "🍹",
+      "image": "/images/products-enhanced/mocktail-soda.webp"
+    },
+    {
+      "id": "mint-margarita",
+      "name": "Mint Margarita",
+      "slug": "mint-margarita",
+      "category": "mocktails",
+      "tagline": "A summer storm of mint and lime.",
+      "description": "Hand-blended fresh mint, lime and a whisper of sweetness into a frozen, electric-green refresher.",
+      "ingredients": [
+        "Fresh mint",
+        "Lime",
+        "Cane syrup",
+        "Crushed ice"
+      ],
+      "sizes": [
+        {
+          "label": "Regular",
+          "price": 300
+        }
+      ],
+      "badges": [
+        "bestseller",
+        "signature"
+      ],
+      "accent": "#2F8F6B",
+      "emoji": "🌿",
+      "image": "/images/products-enhanced/mint-margarita.webp"
+    },
+    {
+      "id": "margarita",
+      "name": "Margarita",
+      "slug": "margarita",
+      "category": "mocktails",
+      "tagline": "Frozen, fruity, zero-proof.",
+      "description": "Blended fruit margaritas in bold printed-menu flavours: Imli, peach, guava, Redbull, red grape, strawberry, Blue Lagoon, Pina Colada and blackcurrant.",
+      "ingredients": [
+        "Fruit",
+        "Lime",
+        "Crushed ice"
+      ],
+      "flavors": [
+        "Imli",
+        "Peach",
+        "Guava",
+        "Redbull",
+        "Red Grape",
+        "Strawberry",
+        "Blue Lagoon",
+        "Pina Colada",
+        "Blackcurrant"
+      ],
+      "sizes": [
+        {
+          "label": "Regular",
+          "price": 350
+        }
+      ],
+      "accent": "#D98A2B",
+      "emoji": "🍹",
+      "image": "/images/products-enhanced/margarita.webp"
+    },
+    {
+      "id": "mojito",
+      "name": "Mojito",
+      "slug": "mojito",
+      "category": "mocktails",
+      "tagline": "Tropical, herbaceous, alive.",
+      "description": "Muddled mint and lime topped with soda and your favourite fruit. Peach, Lemon, Mango, Blueberry or Strawberry.",
+      "ingredients": [
+        "Fresh mint",
+        "Lime",
+        "Soda",
+        "Fruit"
+      ],
+      "flavors": [
+        "Peach",
+        "Lemon",
+        "Mango",
+        "Blueberry",
+        "Strawberry"
+      ],
+      "sizes": [
+        {
+          "label": "Regular",
+          "price": 410
+        }
+      ],
+      "accent": "#2F8F6B",
+      "emoji": "🍸",
+      "image": "/images/products-enhanced/mojito.webp"
+    },
+    {
+      "id": "coladas",
+      "name": "Coladas",
+      "slug": "coladas",
+      "category": "mocktails",
+      "tagline": "Holiday in a glass.",
+      "description": "Creamy, tropical coladas. Classic Pina Colada, Blue Colada or fruity Strawberry Colada.",
+      "ingredients": [
+        "Coconut",
+        "Pineapple / strawberry",
+        "Cream",
+        "Ice"
+      ],
+      "flavors": [
+        "Pina Colada",
+        "Blue Colada",
+        "Strawberry Colada"
+      ],
+      "sizes": [
+        {
+          "label": "Regular",
+          "price": 450
+        }
+      ],
+      "accent": "#C84B5A",
+      "emoji": "🥥",
+      "image": "/images/products-enhanced/coladas.webp"
+    },
+    {
+      "id": "doodh-pati",
+      "name": "Karak Doodh Pati",
+      "slug": "doodh-pati",
+      "category": "quetta-tea",
+      "tagline": "Warm comfort in every sip.",
+      "description": "A proper Quetta-style doodh pati — tea leaves slow-boiled in full-cream milk until thick and golden. Karak chai energy.",
+      "ingredients": [
+        "Strong tea leaves",
+        "Full-cream milk",
+        "Sugar"
+      ],
+      "flavors": [
+        "Karak Chai",
+        "Doodh Pati"
+      ],
+      "sizes": [
+        {
+          "label": "Cup",
+          "price": 160
+        }
+      ],
+      "badges": [
+        "bestseller"
+      ],
+      "accent": "#A6703D",
+      "emoji": "🫖",
+      "image": "/images/products-enhanced/doodh-pati.webp"
+    },
+    {
+      "id": "gur-chai",
+      "name": "Gur / Elaichi Chai",
+      "slug": "gur-chai",
+      "category": "quetta-tea",
+      "tagline": "Jaggery-sweet and soulful.",
+      "description": "Traditional Quetta-style chai in Gur or Elaichi style, slow-boiled with milk for deep comfort.",
+      "ingredients": [
+        "Tea leaves",
+        "Milk",
+        "Gur / cardamom"
+      ],
+      "flavors": [
+        "Gur Chai",
+        "Elaichi Chai"
+      ],
+      "sizes": [
+        {
+          "label": "Cup",
+          "price": 220
+        }
+      ],
+      "accent": "#8A5A2B",
+      "emoji": "🫖",
+      "image": "/images/products-enhanced/gur-chai.webp"
+    },
+    {
+      "id": "kashmiri-chai",
+      "name": "Kashmiri Chai",
+      "slug": "kashmiri-chai",
+      "category": "quetta-tea",
+      "tagline": "Rose-pink, crowned with nuts.",
+      "description": "The famous pink chai — slow-brewed special leaf and milk, finished with crushed pistachio and almond.",
+      "ingredients": [
+        "Kashmiri tea leaf",
+        "Milk",
+        "Pistachio",
+        "Almond"
+      ],
+      "sizes": [
+        {
+          "label": "Cup",
+          "price": 310
+        }
+      ],
+      "badges": [
+        "seasonal"
+      ],
+      "accent": "#C98B8B",
+      "emoji": "🌸",
+      "image": "/images/products-enhanced/kashmiri-chai.webp"
+    },
+    {
+      "id": "peshawari-kehwa",
+      "name": "Peshawari Kehwa",
+      "slug": "peshawari-kehwa",
+      "category": "quetta-tea",
+      "tagline": "Light, aromatic, restorative.",
+      "description": "A fragrant green kehwa with cardamom — the perfect light, soothing finish to a meal.",
+      "ingredients": [
+        "Green tea",
+        "Cardamom",
+        "Saffron"
+      ],
+      "sizes": [
+        {
+          "label": "Cup",
+          "price": 150
+        }
+      ],
+      "accent": "#7C8A4A",
+      "emoji": "🍵",
+      "image": "/images/products-enhanced/peshawari-kehwa.webp"
+    },
+    {
+      "id": "iced-tea",
+      "name": "Iced Tea",
+      "slug": "iced-tea",
+      "category": "iced-tea",
+      "tagline": "Bright, chilled, refreshing.",
+      "description": "Freshly brewed iced tea over ice. Peach, Green Apple or Strawberry.",
+      "ingredients": [
+        "Brewed tea",
+        "Fruit",
+        "Ice"
+      ],
+      "flavors": [
+        "Peach",
+        "Green Apple",
+        "Strawberry"
+      ],
+      "sizes": [
+        {
+          "label": "Regular",
+          "price": 360
+        }
+      ],
+      "accent": "#D98A2B",
+      "emoji": "🧋",
+      "image": "/images/products-enhanced/iced-tea.webp"
+    },
+    {
+      "id": "bubble-iced-tea",
+      "name": "Bubble Iced Tea",
+      "slug": "bubble-iced-tea",
+      "category": "iced-tea",
+      "tagline": "Iced tea, with a chewy twist.",
+      "description": "Our iced tea loaded with fruit popping boba. Peach, Green Apple or Strawberry.",
+      "ingredients": [
+        "Brewed tea",
+        "Fruit popping boba",
+        "Ice"
+      ],
+      "flavors": [
+        "Peach",
+        "Green Apple",
+        "Strawberry"
+      ],
+      "sizes": [
+        {
+          "label": "Regular",
+          "price": 500
+        }
+      ],
+      "badges": [
+        "new"
+      ],
+      "accent": "#E0A92E",
+      "emoji": "🧋",
+      "image": "/images/products-enhanced/bubble-iced-tea.webp"
+    },
+    {
+      "id": "smoothies",
+      "name": "Smoothies",
+      "slug": "smoothies",
+      "category": "smoothies",
+      "tagline": "Real fruit, blended thick.",
+      "description": "Thick, cold fruit smoothies blended with yoghurt. Choose a single fruit or a printed-menu combo.",
+      "ingredients": [
+        "Fresh fruit",
+        "Yoghurt",
+        "Honey",
+        "Ice"
+      ],
+      "flavors": [
+        "Mango",
+        "Banana",
+        "Blueberry",
+        "Strawberry",
+        "Mango Banana",
+        "Blueberry Banana",
+        "Banana Strawberry",
+        "Strawberry Blueberry"
+      ],
+      "sizes": [
+        {
+          "label": "Regular",
+          "price": 450
+        }
+      ],
+      "badges": [
+        "seasonal"
+      ],
+      "accent": "#6B2F6B",
+      "emoji": "🥤",
+      "image": "/images/products-enhanced/smoothies.webp"
+    },
+    {
+      "id": "lassi",
+      "name": "Lassi",
+      "slug": "lassi",
+      "category": "smoothies",
+      "tagline": "The desi classic, done right.",
+      "description": "Thick, creamy lassi churned fresh. Choose classic lassi flavours or the premium Laban, Mango and Classic Honey set.",
+      "ingredients": [
+        "Fresh yoghurt",
+        "Sugar / salt",
+        "Ice"
+      ],
+      "flavors": [
+        "Sweet Lassi",
+        "Salty Lassi",
+        "Mint Lassi",
+        "Laban Lassi",
+        "Mango Lassi",
+        "Classic Honey Lassi"
+      ],
+      "sizes": [
+        {
+          "label": "Sweet / Salty / Mint",
+          "price": 290
+        },
+        {
+          "label": "Laban / Mango / Classic Honey",
+          "price": 350
+        }
+      ],
+      "accent": "#E4C272",
+      "emoji": "🥛",
+      "image": "/images/products-enhanced/lassi.webp"
+    },
+    {
+      "id": "refreshing",
+      "name": "Refreshing",
+      "slug": "refreshing",
+      "category": "smoothies",
+      "tagline": "Light, zingy, alive.",
+      "description": "Bright fresh coolers. Falsa, lemon, ginger ale, green mint, red plum / imli and mint lemonade.",
+      "ingredients": [
+        "Fresh fruit",
+        "Lime",
+        "Mint",
+        "Ice"
+      ],
+      "flavors": [
+        "Falsa",
+        "Lemon",
+        "Ginger Ale",
+        "Green Mint",
+        "Red Plum / Imli",
+        "Mint Lemonade"
+      ],
+      "sizes": [
+        {
+          "label": "Small",
+          "price": 190
+        },
+        {
+          "label": "Large",
+          "price": 240
+        }
+      ],
+      "accent": "#8E3B6B",
+      "emoji": "🍋",
+      "image": "/images/products-enhanced/refreshing.webp"
+    },
+    {
+      "id": "zero-sugar",
+      "name": "Zero Sugar",
+      "slug": "zero-sugar",
+      "category": "smoothies",
+      "tagline": "Fresh chill, lighter sip.",
+      "description": "Printed-menu zero sugar refreshers in lemon, ginger ale, green mint and mint lemonade.",
+      "ingredients": [
+        "Zero sugar base",
+        "Soda",
+        "Mint",
+        "Ice"
+      ],
+      "flavors": [
+        "Lemon",
+        "Ginger Ale",
+        "Green Mint",
+        "Mint Lemonade"
+      ],
+      "sizes": [
+        {
+          "label": "Small",
+          "price": 180
+        },
+        {
+          "label": "Large",
+          "price": 220
+        }
+      ],
+      "badges": [
+        "new"
+      ],
+      "accent": "#2F8F6B",
+      "emoji": "🍋",
+      "image": "/images/products-enhanced/zero-sugar.webp"
+    }
+  ],
+  "offers": [
+    {
+      "id": "offer-summer",
+      "badge": "Summer Campaign",
+      "title": "Buy 2 Get 1 Free",
+      "subtitle": "Premium Bubble Tea Collection",
+      "body": "Mix and match any three bubble teas — the third is on us. The perfect excuse to bring friends.",
+      "terms": "Dine-in, pickup & delivery. Lowest-priced drink free. Mention “BOGO” on WhatsApp.",
+      "accent": "#005F68",
+      "emoji": "🧋",
+      "image": "/images/gallery/g-01.webp",
+      "price_before": "Rs 1650",
+      "price_after": "Rs 1100"
+    },
+    {
+      "id": "offer-matcha",
+      "badge": "Weekday Ritual",
+      "title": "Matcha Mondays — 20% Off",
+      "subtitle": "Every Iced & Hot Matcha",
+      "body": "Start the week jade and gold. Every matcha drink is 20% off, all day, every Monday.",
+      "terms": "Mondays only. Mention “MATCHA20” on WhatsApp.",
+      "accent": "#5F7A3A",
+      "emoji": "🍵"
+    },
+    {
+      "id": "offer-scoop",
+      "badge": "Family Pack",
+      "title": "Scoop Squad — 4 Scoops, Save 15%",
+      "subtitle": "Any Four Premium Scoops",
+      "body": "Build a box of any four scoops for the whole family and save 15% on the lot.",
+      "terms": "Pickup & delivery. Mention “SQUAD” on WhatsApp.",
+      "accent": "#7C8A4A",
+      "emoji": "🍨"
+    },
+    {
+      "id": "offer-student",
+      "badge": "Always On",
+      "title": "Student Special — 10% Off",
+      "subtitle": "Show a Valid Student ID",
+      "body": "Fuel the study grind. Students get 10% off every order, every day, no minimum.",
+      "terms": "Show valid student ID on pickup or mention on WhatsApp for delivery.",
+      "accent": "#D4A537",
+      "emoji": "🎓"
+    }
+  ],
+  "settings": {
+    "site_name": "CO3 Premium Liquid Shop",
+    "tagline": "Refresh Your Mood, Fuel Your Day",
+    "tagline_script": "Scoop into Happiness",
+    "vibe": "Good Vibes. Great Drinks.",
+    "description": "Premium boba milk tea, ceremonial matcha, coffee, ice cream, bubble soda, shakes and signature drinks — crafted fresh daily in Rawalpindi. Order instantly on WhatsApp.",
+    "phone": "0303 6303111",
+    "phone_intl": "+923036303111",
+    "whatsapp": "923036303111",
+    "email": "orders@co3premium.com",
+    "address": "Bahria Town, Phase 4, Rawalpindi",
+    "hours": "Mon–Sun · 12:00 PM – 2:00 AM",
+    "instagram": "https://instagram.com/co3premium",
+    "facebook": "https://facebook.com/co3premium",
+    "tiktok": "https://tiktok.com/@co3premium",
+    "price_note": "All prices are exclusive of tax.",
+    "logo_nav": "",
+    "logo_footer": ""
+  }
+}

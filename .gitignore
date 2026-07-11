@@ -1,0 +1,40 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# next.js
+/.next/
+/.next_corrupt_cache_*/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+*.zip
+.vscode/
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# env
+.env*.local
+.env
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# raw image sources (originals — only the optimized WebPs in public/ ship)
+/raw-images/*
+!/raw-images/README.md
+
+# admin runtime (created fresh on the server by install.php)
+/admin/data/*.sqlite*
+/admin/uploads/*
+!/admin/uploads/.gitkeep
