@@ -9,7 +9,10 @@ export const SITE = {
   tagline: 'Refresh Your Mood, Fuel Your Day',
   taglineScript: 'Scoop into Happiness',
   vibe: 'Good Vibes. Great Drinks.',
-  domain: 'https://co3premium.com', // ← replace with the live Hostinger domain
+  // Canonical public domain used for metadata, schema, robots and sitemap.
+  // Keep this as the final brand domain; temporary Hostinger preview domains
+  // should not become the long-term SEO canonical.
+  domain: 'https://co3premium.com',
   description:
     'Premium boba milk tea, ceremonial matcha, coffee, ice cream, bubble soda, shakes and signature drinks — crafted fresh daily in Rawalpindi. Order instantly on WhatsApp.',
   locale: 'en_PK',

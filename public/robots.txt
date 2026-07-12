@@ -41,5 +41,5 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Host: https://co3premium.com
+Host: co3premium.com
 Sitemap: https://co3premium.com/sitemap.xml
