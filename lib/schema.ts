@@ -4,8 +4,10 @@
 
 import { SITE } from './site';
 import { PRODUCTS, CATEGORIES, fromPrice, type Product } from './products';
+import { AGENCY_ATTRIBUTION, getAgencyAttributionUrl } from './agency';
 
 const url = (path = '') => `${SITE.domain}${path}`;
+const agencyUrl = (path = '') => `${AGENCY_ATTRIBUTION.agencyUrl.replace(/\/+$/, '')}${path}`;
 
 // ── Restaurant / LocalBusiness (sitewide, lives in <head>) ──────────
 export function restaurantSchema() {
@@ -96,6 +98,64 @@ export function websiteSchema() {
     description: SITE.description,
     inLanguage: 'en-PK',
     publisher: { '@id': url('/#organization') },
+    creator: { '@id': agencyUrl('/#organization') },
+  };
+}
+
+// ── Agency attribution schema ──────────────────────────────────────
+// A single credited organization node for the website creator. This keeps the
+// branded footer attribution machine-readable without duplicating CO3's own
+// Organization schema or using manipulative anchor text.
+export function agencyOrganizationSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': agencyUrl('/#organization'),
+    name: AGENCY_ATTRIBUTION.agencyName,
+    url: AGENCY_ATTRIBUTION.agencyUrl,
+    logo: url(AGENCY_ATTRIBUTION.logoPath),
+    email: AGENCY_ATTRIBUTION.contact.email,
+    telephone: AGENCY_ATTRIBUTION.contact.phone,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: AGENCY_ATTRIBUTION.contact.address.street,
+      addressLocality: AGENCY_ATTRIBUTION.contact.address.city,
+      addressRegion: AGENCY_ATTRIBUTION.contact.address.region,
+      postalCode: AGENCY_ATTRIBUTION.contact.address.postalCode,
+      addressCountry: AGENCY_ATTRIBUTION.contact.address.country,
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'sales',
+      telephone: AGENCY_ATTRIBUTION.contact.phone,
+      email: AGENCY_ATTRIBUTION.contact.email,
+      areaServed: 'PK',
+      availableLanguage: ['English', 'Urdu'],
+    },
+    ...(AGENCY_ATTRIBUTION.founder
+      ? {
+          founder: {
+            '@type': 'Person',
+            name: AGENCY_ATTRIBUTION.founder.name,
+            jobTitle: AGENCY_ATTRIBUTION.founder.jobTitle,
+          },
+        }
+      : {}),
+    ...(AGENCY_ATTRIBUTION.sameAs.length ? { sameAs: AGENCY_ATTRIBUTION.sameAs } : {}),
+  };
+}
+
+export function websiteAttributionSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CreativeWork',
+    '@id': url('/#website-credit'),
+    name: `${SITE.name} website design and development`,
+    url: url('/'),
+    creator: { '@id': agencyUrl('/#organization') },
+    about: { '@id': url('/#business') },
+    creditText: `Website designed & developed by ${AGENCY_ATTRIBUTION.agencyName}`,
+    isBasedOn: getAgencyAttributionUrl(),
   };
 }
 

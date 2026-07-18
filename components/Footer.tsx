@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { WhatsAppIcon } from './OrderModal';
 import BrandLogo from './BrandLogo';
 import { useSettings } from './SettingsProvider';
+import FooterAttribution from './FooterAttribution';
 
 const COLS = [
   {
@@ -123,8 +124,9 @@ export default function Footer() {
       </div>
 
       <div className="divider-gold" />
-      <div className="container-luxe flex flex-col items-center justify-between gap-2 py-6 text-xs text-cream/50 sm:flex-row">
+      <div className="container-luxe flex flex-col items-center justify-between gap-3 py-6 text-xs text-cream/50 lg:flex-row">
         <p>© {new Date().getFullYear()} {s.siteName}. All rights reserved.</p>
+        <FooterAttribution />
         <p>Crafted fresh in Rawalpindi, Pakistan · Made with 🤍 + 🥤</p>
       </div>
     </footer>

@@ -6,6 +6,8 @@ import {
   restaurantSchema,
   organizationSchema,
   websiteSchema,
+  agencyOrganizationSchema,
+  websiteAttributionSchema,
   jsonLd,
 } from '@/lib/schema';
 
@@ -88,7 +90,13 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const siteSchema = [restaurantSchema(), organizationSchema(), websiteSchema()];
+  const siteSchema = [
+    restaurantSchema(),
+    organizationSchema(),
+    websiteSchema(),
+    agencyOrganizationSchema(),
+    websiteAttributionSchema(),
+  ];
 
   return (
     <html
