@@ -12,7 +12,7 @@ export const SITE = {
   // Canonical public domain used for metadata, schema, robots and sitemap.
   // Keep this as the final brand domain; temporary Hostinger preview domains
   // should not become the long-term SEO canonical.
-  domain: 'https://co3premium.com',
+  domain: 'https://co3premiumliquids.com',
   description:
     'Premium boba milk tea, ceremonial matcha, coffee, ice cream, bubble soda, shakes and signature drinks — crafted fresh daily in Rawalpindi. Order instantly on WhatsApp.',
   locale: 'en_PK',
@@ -49,7 +49,7 @@ export const SITE = {
   phoneDisplay: '0303 6303111',
   phoneIntl: '+923036303111',
   whatsappNumber: '923036303111',
-  email: 'orders@co3premium.com',
+  email: 'orders@co3premiumliquids.com',
 
   social: {
     instagram: 'https://instagram.com/co3premium',

@@ -15,7 +15,7 @@ set -euo pipefail
 HOST="145.79.28.194"
 PORT="65002"
 USER="u700603111"
-DOMAIN="${DOMAIN:-darkgray-shrew-967203.hostingersite.com}"
+DOMAIN="${DOMAIN:-co3premiumliquids.com}"
 ZIP="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/co3-hostinger-deploy.zip"
 
 [ -f "$ZIP" ] || { echo "✖ co3-hostinger-deploy.zip not found next to this script."; exit 1; }
@@ -24,7 +24,7 @@ echo
 
 cat "$ZIP" | ssh -p "$PORT" -o StrictHostKeyChecking=accept-new "$USER@$HOST" '
   set -e
-  DOMAIN="darkgray-shrew-967203.hostingersite.com"
+  DOMAIN="co3premiumliquids.com"
   cat > ~/co3-deploy.zip
 
   WEB="$HOME/domains/$DOMAIN/public_html"

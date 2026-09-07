@@ -41,5 +41,5 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Host: co3premium.com
-Sitemap: https://co3premium.com/sitemap.xml
+Host: co3premiumliquids.com
+Sitemap: https://co3premiumliquids.com/sitemap.xml
