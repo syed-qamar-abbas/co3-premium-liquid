@@ -36,7 +36,7 @@ export default function Footer() {
       <div className="container-luxe relative z-10 grid gap-12 py-16 md:grid-cols-12">
         {/* Brand */}
         <div className="md:col-span-4">
-          <div className="flex items-center gap-3">
+          <div className="inline-flex items-center rounded-3xl border border-gold/25 bg-cream-warm/95 px-4 py-3 shadow-[0_18px_50px_-28px_rgba(0,0,0,0.55)]">
             <BrandLogo
               variant="footer"
               fallback={

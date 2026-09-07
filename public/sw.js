@@ -1,5 +1,11 @@
 const CACHE_NAME = 'co3-static-v1';
-const CORE_ASSETS = ['/', '/menu/', '/site.webmanifest', '/icon.svg'];
+const CORE_ASSETS = [
+  '/',
+  '/menu/',
+  '/site.webmanifest',
+  '/images/brand/co3-app-icon-192.png',
+  '/images/brand/co3-logo-transparent.png',
+];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(

@@ -3,6 +3,7 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
 import { SITE } from '@/lib/site';
 import { fetchLiveSettings } from '@/lib/api';
+import { DEFAULT_CO3_LOGO } from './BrandLogo';
 
 /**
  * SettingsProvider — makes admin-editable brand settings available across the
@@ -47,8 +48,8 @@ const DEFAULTS: LiveSettings = {
   facebook: SITE.social.facebook,
   tiktok: SITE.social.tiktok,
   priceNote: SITE.taxNote,
-  logoNav: '',
-  logoFooter: '',
+  logoNav: DEFAULT_CO3_LOGO,
+  logoFooter: DEFAULT_CO3_LOGO,
 };
 
 // admin key → LiveSettings key

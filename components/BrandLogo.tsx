@@ -3,10 +3,13 @@
 import { useEffect, useState, type ReactNode } from 'react';
 import { fetchLiveSettings } from '@/lib/api';
 
+export const DEFAULT_CO3_LOGO = '/images/brand/co3-logo-transparent.png';
+export const DEFAULT_CO3_APP_ICON = '/images/brand/co3-app-icon-192.png';
+
 /**
  * BrandLogo — shows the admin-uploaded logo when one exists, otherwise the
- * elegant "CO₃" text lockup passed as `fallback`. Settings are fetched once and
- * shared across instances (navbar + footer) via a module-level cache.
+ * exact built-in CO3 transparent logo. Settings are fetched once and shared
+ * across instances (navbar + footer) via a module-level cache.
  */
 let cache: Record<string, string> | null | undefined;
 let inflight: Promise<Record<string, string> | null> | null = null;
@@ -38,16 +41,22 @@ export default function BrandLogo({
     };
   }, [variant]);
 
-  if (logo) {
-    return (
-      <img
-        src={logo}
-        alt="CO3 Premium Liquid Shop"
-        className={`w-auto object-contain object-left ${
-          variant === 'nav' ? 'h-10 max-w-[160px]' : 'h-12 max-w-[200px]'
-        } ${className}`}
-      />
-    );
-  }
-  return <>{fallback}</>;
+  const src = logo || DEFAULT_CO3_LOGO;
+
+  return (
+    <img
+      src={src}
+      alt="CO3 Premium Liquid Shop"
+      loading={variant === 'nav' ? 'eager' : 'lazy'}
+      decoding="async"
+      className={`w-auto object-contain object-left ${
+        variant === 'nav'
+          ? 'h-14 max-w-[112px] sm:h-16 sm:max-w-[140px]'
+          : 'h-20 max-w-[160px] sm:h-24 sm:max-w-[210px]'
+      } ${className}`}
+      onError={(event) => {
+        event.currentTarget.style.display = 'none';
+      }}
+    />
+  );
 }

@@ -55,10 +55,10 @@ export const metadata: Metadata = {
   manifest: '/admin/manifest.php',
   icons: {
     icon: [
-      { url: '/icon.svg', type: 'image/svg+xml' },
-      { url: '/admin/icon.php?size=192', sizes: '192x192', type: 'image/png' },
+      { url: '/images/brand/co3-app-icon-192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/images/brand/co3-app-icon-512.png', sizes: '512x512', type: 'image/png' },
     ],
-    apple: [{ url: '/admin/icon.php?size=180', sizes: '180x180', type: 'image/png' }],
+    apple: [{ url: '/images/brand/co3-app-icon-180.png', sizes: '180x180', type: 'image/png' }],
   },
   openGraph: {
     type: 'website',

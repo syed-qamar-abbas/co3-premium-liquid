@@ -24,7 +24,7 @@ Target: **≤ 80 KB** per card image, **≤ 200 KB** for hero/OG. Use
 |------|------|---------|
 | `/images/og-cover.webp` | 1200×630 | Open Graph / Twitter card |
 | `/images/co3-storefront.webp` | 1600×1000 | LocalBusiness schema image |
-| `/images/co3-logo.png` | 512×512 | Logo (schema + manifest) |
+| `/images/brand/co3-logo-transparent.png` | 512×512 | Exact transparent CO3 logo (navbar, footer, schema) |
 | `/favicon.ico`, `/apple-touch-icon.png`, `/icon-192.png`, `/icon-512.png` | — | Favicons / PWA |
 | `/videos/hero.webm` | 1080p, ≤ 2 MB | Optional hero loop (matcha pour / coffee swirl) |
 

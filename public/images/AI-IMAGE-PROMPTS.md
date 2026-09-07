@@ -155,7 +155,7 @@ needed.
 > with gold detailing, warm ambient lighting, marble counter, plants, premium and
 > inviting, architectural photography, 16:10.
 
-**`/images/co3-logo.png`** (512×512, transparent)
+**`/images/brand/co3-logo-transparent.png`** (512×512, transparent)
 > A minimal luxury monogram logo "C3" in brushed gold on a transparent background,
 > elegant serif, premium café branding, vector style.
 

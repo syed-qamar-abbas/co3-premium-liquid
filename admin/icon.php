@@ -7,12 +7,12 @@ $size = (int)($_GET['size'] ?? 192);
 $size = in_array($size, [180, 192, 512], true) ? $size : 192;
 
 if (!extension_loaded('gd')) {
-    header('Location: /icon.svg', true, 302);
+    header('Location: /images/brand/co3-app-icon-' . ($size === 180 ? '180' : $size) . '.png', true, 302);
     exit;
 }
 
 function icon_source_path(): string {
-    $logo = setting('logo_nav') ?: setting('logo_footer');
+    $logo = setting('logo_nav') ?: setting('logo_footer') ?: '/images/brand/co3-logo-transparent.png';
     $logo = ltrim((string)$logo, '/');
     if ($logo === '') return '';
     $path = dirname(__DIR__) . '/' . $logo;
@@ -34,10 +34,9 @@ function image_from_path(string $path) {
 $canvas = imagecreatetruecolor($size, $size);
 imagealphablending($canvas, true);
 imagesavealpha($canvas, true);
-$teal = imagecolorallocate($canvas, 0, 95, 104);
 $gold = imagecolorallocate($canvas, 212, 165, 55);
 $cream = imagecolorallocate($canvas, 244, 240, 230);
-imagefilledrectangle($canvas, 0, 0, $size, $size, $teal);
+imagefilledrectangle($canvas, 0, 0, $size, $size, $cream);
 
 $pad = max(10, (int)round($size * 0.08));
 imagerectangle($canvas, $pad, $pad, $size - $pad, $size - $pad, $gold);
@@ -46,7 +45,7 @@ $src = ($path = icon_source_path()) ? image_from_path($path) : null;
 if ($src) {
     $sw = imagesx($src);
     $sh = imagesy($src);
-    $max = (int)round($size * 0.72);
+    $max = (int)round($size * 0.78);
     $scale = min($max / max(1, $sw), $max / max(1, $sh));
     $dw = max(1, (int)round($sw * $scale));
     $dh = max(1, (int)round($sh * $scale));
@@ -59,7 +58,8 @@ if ($src) {
     $label = 'CO3';
     $tw = imagefontwidth($font) * strlen($label);
     $th = imagefontheight($font);
-    imagestring($canvas, $font, (int)(($size - $tw) / 2), (int)(($size - $th) / 2), $label, $cream);
+    $teal = imagecolorallocate($canvas, 0, 95, 104);
+    imagestring($canvas, $font, (int)(($size - $tw) / 2), (int)(($size - $th) / 2), $label, $teal);
 }
 
 header('Content-Type: image/png');

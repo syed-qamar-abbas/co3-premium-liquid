@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useSettings } from './SettingsProvider';
+import { DEFAULT_CO3_APP_ICON } from './BrandLogo';
 
 type BeforeInstallPromptEvent = Event & {
   prompt: () => Promise<void>;
@@ -11,7 +11,6 @@ type BeforeInstallPromptEvent = Event & {
 const DISMISSED_KEY = 'co3-install-dismissed';
 
 export default function PWAInstallPrompt() {
-  const settings = useSettings();
   const [installEvent, setInstallEvent] = useState<BeforeInstallPromptEvent | null>(null);
   const [hidden, setHidden] = useState(true);
 
@@ -52,17 +51,13 @@ export default function PWAInstallPrompt() {
     <div className="fixed inset-x-3 bottom-[5.6rem] z-[85] md:hidden">
       <div className="mx-auto flex max-w-sm items-center gap-3 rounded-2xl border border-gold/25 bg-cream-warm/95 p-2.5 shadow-lift backdrop-blur-xl">
         <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-gold/35 bg-teal text-gold">
-          {settings.logoNav ? (
-            <img
-              src={settings.logoNav}
-              alt="CO3"
-              loading="lazy"
-              decoding="async"
-              className="h-full w-full object-contain p-1"
-            />
-          ) : (
-            <span className="font-display text-base font-bold">C3</span>
-          )}
+          <img
+            src={DEFAULT_CO3_APP_ICON}
+            alt="CO3"
+            loading="lazy"
+            decoding="async"
+            className="h-full w-full object-contain p-1"
+          />
         </div>
         <button
           type="button"

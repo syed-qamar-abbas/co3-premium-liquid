@@ -22,7 +22,7 @@ export function restaurantSchema() {
     telephone: SITE.phoneIntl,
     email: SITE.email,
     image: url('/images/gallery/g-05.webp'),
-    logo: url('/icon.svg'),
+    logo: url('/images/brand/co3-logo-transparent.png'),
     priceRange: SITE.priceRange,
     currenciesAccepted: SITE.currency,
     paymentAccepted: 'Cash, Card, JazzCash, EasyPaisa, Bank Transfer',
@@ -76,7 +76,7 @@ export function organizationSchema() {
     '@id': url('/#organization'),
     name: SITE.name,
     url: url('/'),
-    logo: url('/icon.svg'),
+    logo: url('/images/brand/co3-logo-transparent.png'),
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: SITE.phoneIntl,
