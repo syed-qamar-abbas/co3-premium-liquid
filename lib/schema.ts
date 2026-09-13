@@ -8,6 +8,7 @@ import { AGENCY_ATTRIBUTION, getAgencyAttributionUrl } from './agency';
 
 const url = (path = '') => `${SITE.domain}${path}`;
 const agencyUrl = (path = '') => `${AGENCY_ATTRIBUTION.agencyUrl.replace(/\/+$/, '')}${path}`;
+const founderId = () => agencyUrl('/#founder');
 
 // ── Restaurant / LocalBusiness (sitewide, lives in <head>) ──────────
 export function restaurantSchema() {
@@ -115,6 +116,8 @@ export function websiteSchema() {
     description: SITE.description,
     inLanguage: 'en-PK',
     publisher: { '@id': url('/#organization') },
+    owner: { '@id': url('/#organization') },
+    copyrightHolder: { '@id': url('/#organization') },
     creator: { '@id': agencyUrl('/#organization') },
   };
 }
@@ -155,6 +158,10 @@ export function agencyOrganizationSchema() {
     '@type': 'Organization',
     '@id': agencyUrl('/#organization'),
     name: AGENCY_ATTRIBUTION.agencyName,
+    ...(AGENCY_ATTRIBUTION.legalName ? { legalName: AGENCY_ATTRIBUTION.legalName } : {}),
+    ...(AGENCY_ATTRIBUTION.alternateNames?.length
+      ? { alternateName: AGENCY_ATTRIBUTION.alternateNames }
+      : {}),
     url: AGENCY_ATTRIBUTION.agencyUrl,
     logo: url(AGENCY_ATTRIBUTION.logoPath),
     email: AGENCY_ATTRIBUTION.contact.email,
@@ -177,14 +184,23 @@ export function agencyOrganizationSchema() {
     },
     ...(AGENCY_ATTRIBUTION.founder
       ? {
-          founder: {
-            '@type': 'Person',
-            name: AGENCY_ATTRIBUTION.founder.name,
-            jobTitle: AGENCY_ATTRIBUTION.founder.jobTitle,
-          },
+          founder: { '@id': founderId() },
         }
       : {}),
     ...(AGENCY_ATTRIBUTION.sameAs.length ? { sameAs: AGENCY_ATTRIBUTION.sameAs } : {}),
+  };
+}
+
+export function agencyFounderSchema() {
+  if (!AGENCY_ATTRIBUTION.founder) return null;
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': founderId(),
+    name: AGENCY_ATTRIBUTION.founder.name,
+    jobTitle: AGENCY_ATTRIBUTION.founder.jobTitle,
+    worksFor: { '@id': agencyUrl('/#organization') },
   };
 }
 
@@ -196,8 +212,10 @@ export function websiteAttributionSchema() {
     name: `${SITE.name} website design and development`,
     url: url('/'),
     creator: { '@id': agencyUrl('/#organization') },
+    publisher: { '@id': url('/#organization') },
     about: { '@id': url('/#business') },
-    creditText: `Website designed & developed by ${AGENCY_ATTRIBUTION.agencyName}`,
+    isPartOf: { '@id': url('/#website') },
+    creditText: `Designed & Developed by ${AGENCY_ATTRIBUTION.agencyName}`,
     isBasedOn: getAgencyAttributionUrl(),
   };
 }

@@ -7,6 +7,7 @@ import {
   organizationSchema,
   websiteSchema,
   agencyOrganizationSchema,
+  agencyFounderSchema,
   websiteAttributionSchema,
   jsonLd,
 } from '@/lib/schema';
@@ -99,8 +100,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     organizationSchema(),
     websiteSchema(),
     agencyOrganizationSchema(),
+    agencyFounderSchema(),
     websiteAttributionSchema(),
-  ];
+  ].filter(Boolean);
 
   return (
     <html

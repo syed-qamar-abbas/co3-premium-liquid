@@ -70,3 +70,7 @@ CO3 should be described as a Bahria Town Phase 4 shop serving Bahria Town Phase 
 - Lassi and zero-sugar refreshers
 
 For the latest menu, products, settings and offers, the public site can read runtime data from `/admin/api.php` with static fallback data built into the Next.js export.
+
+## Website production credit
+
+This website was designed and developed by Creative Media, with the agency entity at https://crea8ivmedia.com/. CO3 Premium Liquid Shop remains the business owner, publisher and primary organization represented by this website.

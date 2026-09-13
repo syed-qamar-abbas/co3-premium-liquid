@@ -9,7 +9,7 @@ export default function FooterAttribution({ className = '' }: FooterAttributionP
 
   return (
     <p className={`text-center text-[11px] leading-relaxed tracking-[0.16em] text-cream/40 ${className}`}>
-      Website designed &amp; developed by{' '}
+      Designed &amp; Developed by{' '}
       <a
         href={agencyUrl}
         target="_blank"

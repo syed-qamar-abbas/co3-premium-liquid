@@ -2,6 +2,8 @@ export type AgencyAttributionType = 'homepage' | 'portfolio' | 'case-study';
 
 export interface AgencyAttributionConfig {
   agencyName: string;
+  legalName?: string;
+  alternateNames?: string[];
   agencyUrl: string;
   attributionType: AgencyAttributionType;
   clientSlug: string;
@@ -25,8 +27,10 @@ export interface AgencyAttributionConfig {
 }
 
 export const AGENCY_ATTRIBUTION: AgencyAttributionConfig = {
-  agencyName: 'Crea8iv Media',
-  agencyUrl: 'https://crea8ivmedia.com',
+  agencyName: 'Creative Media',
+  legalName: 'Crea8iv Media',
+  alternateNames: ['Crea8iv Media'],
+  agencyUrl: 'https://crea8ivmedia.com/',
   attributionType: 'homepage',
   clientSlug: 'co3-premium-liquid-shop',
   logoPath: '/images/agency/crea8iv-media-logo.png',
@@ -53,7 +57,7 @@ export function getAgencyAttributionUrl(config = AGENCY_ATTRIBUTION): string {
   const slug = config.clientSlug.trim().replace(/^\/+|\/+$/g, '');
 
   if (!slug || config.attributionType === 'homepage') {
-    return baseUrl;
+    return `${baseUrl}/`;
   }
 
   const encodedSlug = slug

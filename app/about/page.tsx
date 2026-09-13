@@ -6,6 +6,7 @@ import SectionHeading from '@/components/SectionHeading';
 import Reveal from '@/components/Reveal';
 import { breadcrumbSchema, jsonLd } from '@/lib/schema';
 import { STATS } from '@/lib/content';
+import { AGENCY_ATTRIBUTION, getAgencyAttributionUrl } from '@/lib/agency';
 import Counter from '@/components/Counter';
 
 export const metadata: Metadata = {
@@ -113,6 +114,23 @@ export default function AboutPage() {
                 <p className="mt-2 text-xs uppercase tracking-wide2 text-cream/70">{s.label}</p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-8 rounded-3xl border border-teal/10 bg-cream-warm px-6 py-5 text-center text-xs leading-relaxed text-ink/50 shadow-soft">
+            <span className="uppercase tracking-wide2 text-ink/35">Website credit</span>{' '}
+            <span>
+              The CO3 digital experience was designed and developed by{' '}
+              <a
+                href={getAgencyAttributionUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-sm font-semibold text-teal underline decoration-gold/40 underline-offset-4 transition-colors hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-cream-warm"
+                aria-label={`${AGENCY_ATTRIBUTION.agencyName} website — opens in a new tab`}
+              >
+                {AGENCY_ATTRIBUTION.agencyName}
+              </a>
+              .
+            </span>
           </div>
         </div>
       </section>
