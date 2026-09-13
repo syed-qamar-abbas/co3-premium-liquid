@@ -5,13 +5,14 @@ import OrderCTA from '@/components/OrderCTA';
 import { menuSchema, breadcrumbSchema, jsonLd } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Full Menu — Bubble Tea, Coffee, Ice Cream & More',
+  title: 'Full Menu — Bubble Tea, Coffee, Ice Cream & More in Bahria Town',
   description:
-    'Explore the full CO3 Premium Liquid Shop menu: hand-shaken bubble tea, single-origin coffee, ceremonial matcha, slow-churned ice cream, mocktails and smoothies. Order any item on WhatsApp in Rawalpindi.',
+    'Explore the full CO3 menu: bubble tea, coffee, matcha, ice cream, mocktails and smoothies. Order on WhatsApp across Bahria Town Phase 1–8, Rawalpindi and Islamabad.',
   alternates: { canonical: '/menu/' },
   openGraph: {
     title: 'Full Menu | CO3 Premium Liquid Shop',
-    description: 'Bubble tea, coffee, matcha, ice cream, mocktails & smoothies — crafted fresh in Rawalpindi.',
+    description:
+      'Bubble tea, coffee, matcha, ice cream, mocktails & smoothies — crafted fresh in Bahria Town Rawalpindi.',
   },
 };
 
@@ -31,7 +32,7 @@ export default function MenuPage() {
       <PageHero
         eyebrow="The Full Menu"
         title="Every pour, scoop and shake — in one place"
-        intro="From creamy Boba Milk Tea and ceremonial matcha to a proper Quetta karak chai — boba, coffee, ice cream, shakes, bubble soda and more. Filter by category, then order your favourite straight to WhatsApp. All prices are exclusive of tax."
+        intro="From creamy Boba Milk Tea and ceremonial matcha to a proper Quetta karak chai — boba, coffee, ice cream, shakes, bubble soda and more for Bahria Town Phase 1–8, Rawalpindi and nearby Islamabad. Filter by category, then order your favourite straight to WhatsApp. All prices are exclusive of tax."
         breadcrumb={[
           { name: 'Home', href: '/' },
           { name: 'Menu', href: '/menu/' },

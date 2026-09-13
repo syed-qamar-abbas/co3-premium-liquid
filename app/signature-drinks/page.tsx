@@ -4,9 +4,9 @@ import { signatures } from '@/lib/products';
 import { breadcrumbSchema, jsonLd, productSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Signature Drinks — The CO3 Originals',
+  title: 'Signature Drinks — Boba, Matcha & Shakes in Bahria Town',
   description:
-    'Meet the CO3 signature collection: Boba Milk Tea, Iced Matcha, Signature Shakes and Mint Margarita. House favourites crafted with real fruit and premium ingredients in Rawalpindi. Order on WhatsApp.',
+    'Meet the CO3 signature collection: Boba Milk Tea, Iced Matcha, Signature Shakes and Mint Margarita for Bahria Town Phase 1–8, Rawalpindi and nearby Islamabad.',
   alternates: { canonical: '/signature-drinks/' },
 };
 
@@ -26,7 +26,7 @@ export default function SignaturePage() {
       <CategoryView
         eyebrow="House Originals"
         title="The signatures that built our name"
-        intro="These are the pours people cross the city for — recipes we’ve refined obsessively until every sip lands exactly right. You won’t find them anywhere else."
+        intro="These are the pours people in Bahria Town and the twin cities come back for — recipes we’ve refined obsessively until every sip lands exactly right. You won’t find them anywhere else."
         breadcrumb={[
           { name: 'Home', href: '/' },
           { name: 'Signature Drinks', href: '/signature-drinks/' },

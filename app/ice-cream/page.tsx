@@ -4,9 +4,9 @@ import { byCategories } from '@/lib/products';
 import { breadcrumbSchema, jsonLd, productSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Premium Ice Cream — Slow-Churned Scoops & Shakes',
+  title: 'Premium Ice Cream — Scoops & Shakes in Bahria Town',
   description:
-    'Slow-churned premium ice cream in Rawalpindi: Nutty Pistachio, Belgian Dark Chocolate, Fresh Strawberry and thick ice-cream shakes. Made with real fruit and Belgian chocolate. Order on WhatsApp.',
+    'Slow-churned premium ice cream in Bahria Town Rawalpindi: Nutty Pistachio, Belgian Dark Chocolate, Fresh Strawberry and thick shakes. Order across Phase 1–8 on WhatsApp.',
   alternates: { canonical: '/ice-cream/' },
 };
 
@@ -26,7 +26,7 @@ export default function IceCreamPage() {
       <CategoryView
         eyebrow="Slow-Churned"
         title="Ice cream worth the spoon"
-        intro="Dense, slow-churned scoops made with real fruit, roasted nuts and Belgian couverture chocolate. Served as single scoops, double waffle cones, or blended into shakes thick enough to stand a spoon in."
+        intro="Dense, slow-churned scoops made with real fruit, roasted nuts and Belgian couverture chocolate. Served in Bahria Town Rawalpindi as single scoops, double waffle cones, or blended into shakes thick enough to stand a spoon in."
         breadcrumb={[
           { name: 'Home', href: '/' },
           { name: 'Ice Cream', href: '/ice-cream/' },

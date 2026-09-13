@@ -14,8 +14,8 @@ export default function GeoAnswers() {
       <div className="container-luxe">
         <SectionHeading
           eyebrow="Good to know"
-          title="Bubble tea, matcha & coffee in Rawalpindi — answered"
-          intro="Everything people ask before they order. Straight answers, no fluff."
+          title="Bahria Town, Rawalpindi & Islamabad — answered"
+          intro="Everything people ask before they order: location, delivery area, products and WhatsApp flow."
           align="left"
         />
 

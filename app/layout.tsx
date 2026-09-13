@@ -31,7 +31,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.domain),
   title: {
-    default: 'CO3 Premium Liquid Shop | Bubble Tea, Ice Cream & Coffee in Rawalpindi',
+    default: 'CO3 Premium Liquid Shop | Bubble Tea, Coffee & Ice Cream in Bahria Town',
     template: '%s | CO3 Premium Liquid Shop',
   },
   description: SITE.description,
@@ -44,6 +44,10 @@ export const metadata: Metadata = {
     'best matcha Rawalpindi',
     'ice cream Rawalpindi',
     'coffee Bahria Town',
+    'Bahria Town Phase 1 to 8 drinks',
+    'bubble tea Bahria Town',
+    'ice cream Bahria Town Rawalpindi',
+    'coffee Islamabad Rawalpindi',
     'Spanish latte Islamabad',
     'premium drinks Rawalpindi',
     'CO3 Premium Liquid Shop',
@@ -65,7 +69,7 @@ export const metadata: Metadata = {
     locale: SITE.locale,
     url: SITE.domain,
     siteName: SITE.name,
-    title: 'CO3 Premium Liquid Shop | Bubble Tea, Ice Cream & Coffee in Rawalpindi',
+    title: 'CO3 Premium Liquid Shop | Bubble Tea, Coffee & Ice Cream in Bahria Town',
     description: SITE.description,
     images: [
       {
@@ -78,7 +82,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CO3 Premium Liquid Shop | Rawalpindi',
+    title: 'CO3 Premium Liquid Shop | Bahria Town Rawalpindi',
     description: SITE.description,
     images: ['/images/og-cover.webp'],
   },

@@ -14,7 +14,7 @@ export const SITE = {
   // should not become the long-term SEO canonical.
   domain: 'https://co3premiumliquids.com',
   description:
-    'Premium boba milk tea, ceremonial matcha, coffee, ice cream, bubble soda, shakes and signature drinks — crafted fresh daily in Rawalpindi. Order instantly on WhatsApp.',
+    'Premium boba milk tea, ceremonial matcha, coffee, ice cream, bubble soda, shakes and signature drinks — crafted fresh in Bahria Town Phase 4 for Bahria Phase 1–8, Rawalpindi and Islamabad. Order instantly on WhatsApp.',
   locale: 'en_PK',
   currency: 'PKR',
   currencySymbol: 'Rs',
@@ -31,6 +31,14 @@ export const SITE = {
   },
   geo: { lat: 33.5217, lng: 73.0716 }, // approx — set exact pin before launch
   areasServed: [
+    'Bahria Town Phase 1',
+    'Bahria Town Phase 2',
+    'Bahria Town Phase 3',
+    'Bahria Town Phase 4',
+    'Bahria Town Phase 5',
+    'Bahria Town Phase 6',
+    'Bahria Town Phase 7',
+    'Bahria Town Phase 8',
     'Bahria Town Rawalpindi',
     'DHA Islamabad',
     'Gulberg Greens',

@@ -21,6 +21,7 @@ const COLS = [
     title: 'Explore',
     links: [
       { label: 'Seasonal Offers', href: '/offers/' },
+      { label: 'Bahria Phase 1–8', href: '/bahria-town-rawalpindi/' },
       { label: 'Gallery', href: '/gallery/' },
       { label: 'About Us', href: '/about/' },
       { label: 'FAQ', href: '/faq/' },

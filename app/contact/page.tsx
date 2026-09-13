@@ -6,9 +6,9 @@ import { breadcrumbSchema, restaurantSchema, jsonLd } from '@/lib/schema';
 import { SITE, genericWhatsAppLink } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Contact & Location — Order, Visit or Enquire',
+  title: 'Contact & Location — Bahria Town Rawalpindi',
   description:
-    'Contact CO3 Premium Liquid Shop in Bahria Town, Rawalpindi. Order on WhatsApp at 0303 6303111, call us, or send an enquiry. Open daily from noon until late. Pickup & delivery available.',
+    'Contact CO3 Premium Liquid Shop in Bahria Town Phase 4, Rawalpindi. Order on WhatsApp at 0303 6303111 for pickup or delivery across Bahria Phase 1–8 and nearby Islamabad.',
   alternates: { canonical: '/contact/' },
 };
 
@@ -77,7 +77,9 @@ export default function ContactPage() {
                 <li className="flex justify-between"><span>Monday – Thursday & Sunday</span> <span className="font-medium">12:00 PM – 12:00 AM</span></li>
                 <li className="flex justify-between"><span>Friday – Saturday</span> <span className="font-medium">12:00 PM – 2:00 AM</span></li>
               </ul>
-              <p className="mt-3 text-xs text-ink/45">Pickup & delivery across Rawalpindi and Islamabad.</p>
+              <p className="mt-3 text-xs text-ink/45">
+                Pickup & delivery across Bahria Town Phase 1–8, Rawalpindi and nearby Islamabad.
+              </p>
             </div>
 
             {/* Map */}

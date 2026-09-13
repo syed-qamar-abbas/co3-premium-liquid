@@ -27,6 +27,23 @@ export function restaurantSchema() {
     currenciesAccepted: SITE.currency,
     paymentAccepted: 'Cash, Card, JazzCash, EasyPaisa, Bank Transfer',
     servesCuisine: ['Bubble Tea', 'Coffee', 'Ice Cream', 'Desserts', 'Beverages'],
+    keywords: [
+      'bubble tea in Bahria Town',
+      'boba milk tea in Rawalpindi',
+      'coffee in Bahria Town Rawalpindi',
+      'ice cream in Rawalpindi',
+      'matcha in Islamabad',
+      'Bahria Town Phase 1 to 8 drinks',
+    ],
+    knowsAbout: [
+      'Bubble tea',
+      'Boba milk tea',
+      'Ceremonial matcha',
+      'Specialty coffee',
+      'Premium ice cream',
+      'Mocktails',
+      'Bubble soda',
+    ],
     address: {
       '@type': 'PostalAddress',
       streetAddress: SITE.address.street,
@@ -81,7 +98,7 @@ export function organizationSchema() {
       '@type': 'ContactPoint',
       telephone: SITE.phoneIntl,
       contactType: 'sales',
-      areaServed: 'PK',
+      areaServed: SITE.areasServed,
       availableLanguage: ['English', 'Urdu'],
     },
     sameAs: [SITE.social.instagram, SITE.social.facebook, SITE.social.tiktok],
@@ -99,6 +116,32 @@ export function websiteSchema() {
     inLanguage: 'en-PK',
     publisher: { '@id': url('/#organization') },
     creator: { '@id': agencyUrl('/#organization') },
+  };
+}
+
+export function serviceAreaPageSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': url('/bahria-town-rawalpindi/#webpage'),
+    url: url('/bahria-town-rawalpindi/'),
+    name: 'Bubble Tea, Coffee & Ice Cream in Bahria Town Phase 1–8',
+    description:
+      'Local guide to ordering CO3 bubble tea, coffee, matcha, ice cream and soda across Bahria Town Phase 1–8, Rawalpindi and nearby Islamabad areas.',
+    inLanguage: 'en-PK',
+    isPartOf: { '@id': url('/#website') },
+    about: { '@id': url('/#business') },
+    primaryImageOfPage: {
+      '@type': 'ImageObject',
+      url: url('/images/gallery/g-05.webp'),
+      caption: 'CO3 Premium Liquid Shop storefront in Bahria Town Rawalpindi',
+    },
+    mainEntity: {
+      '@type': 'LocalBusiness',
+      '@id': url('/#business'),
+      name: SITE.name,
+      areaServed: SITE.areasServed.map((name) => ({ '@type': 'Place', name })),
+    },
   };
 }
 
@@ -166,7 +209,8 @@ export function menuSchema() {
     '@type': 'Menu',
     '@id': url('/menu/#menu'),
     name: `${SITE.name} Menu`,
-    description: 'Bubble tea, coffee, tea, ice cream, mocktails and smoothies — crafted fresh in Rawalpindi.',
+    description:
+      'Bubble tea, coffee, tea, ice cream, mocktails and smoothies — crafted fresh in Bahria Town Rawalpindi for Phase 1–8, Rawalpindi and Islamabad.',
     inLanguage: 'en-PK',
     hasMenuSection: CATEGORIES.map((cat) => ({
       '@type': 'MenuSection',
@@ -207,12 +251,6 @@ export function productSchema(p: Product) {
       offerCount: p.sizes.length,
       availability: 'https://schema.org/InStock',
       seller: { '@id': url('/#business') },
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: SITE.rating.value,
-      reviewCount: 120,
-      bestRating: 5,
     },
   };
 }

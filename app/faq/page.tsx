@@ -7,9 +7,9 @@ import { breadcrumbSchema, faqSchema, jsonLd } from '@/lib/schema';
 import { FAQS } from '@/lib/content';
 
 export const metadata: Metadata = {
-  title: 'FAQ — Delivery, Freshness, Toppings & More',
+  title: 'FAQ — Bahria Town Delivery, Freshness, Toppings & More',
   description:
-    'Answers to common questions about CO3 Premium Liquid Shop: delivery across Rawalpindi & Islamabad, how to order on WhatsApp, fresh ingredients, custom toppings, seasonal drinks and pricing.',
+    'Answers about CO3 Premium Liquid Shop: Bahria Town Phase 1–8 delivery, Rawalpindi & Islamabad ordering, WhatsApp orders, fresh ingredients, toppings and pricing.',
   alternates: { canonical: '/faq/' },
 };
 
@@ -29,7 +29,7 @@ export default function FAQPage() {
       <PageHero
         eyebrow="Questions, Answered"
         title="Everything you need to know"
-        intro="Delivery, freshness, toppings, timings — the things people ask us most, answered clearly. Still stuck? We’re one WhatsApp message away."
+        intro="Bahria Town Phase 1–8 delivery, freshness, toppings, timings — the things people ask us most, answered clearly. Still stuck? We’re one WhatsApp message away."
         breadcrumb={[
           { name: 'Home', href: '/' },
           { name: 'FAQ', href: '/faq/' },

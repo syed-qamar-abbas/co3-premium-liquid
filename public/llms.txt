@@ -1,9 +1,12 @@
 # CO3 Premium Liquid Shop
 
-CO3 Premium Liquid Shop is a premium bubble-tea, coffee, ice-cream, soda, mocktail and dessert-drink brand in Rawalpindi, Pakistan.
+CO3 Premium Liquid Shop is a premium bubble-tea, coffee, ice-cream, soda, mocktail and dessert-drink brand in Bahria Town Rawalpindi, Pakistan.
 
 Canonical site: https://co3premiumliquids.com/
 Primary location: Bahria Town, Phase 4, Rawalpindi, Punjab, Pakistan
+Priority service area: Bahria Town Phase 1, Phase 2, Phase 3, Phase 4, Phase 5, Phase 6, Phase 7 and Phase 8
+Broader local market: Rawalpindi and Islamabad
+Secondary market: Pakistan
 Phone / WhatsApp: +92 303 6303111
 Ordering: Customers can order through WhatsApp from product cards and offer cards.
 Currency: PKR
@@ -33,17 +36,26 @@ Core taglines:
 - Gallery: https://co3premiumliquids.com/gallery/
 - FAQ: https://co3premiumliquids.com/faq/
 - Contact: https://co3premiumliquids.com/contact/
+- Bahria Town Rawalpindi service area: https://co3premiumliquids.com/bahria-town-rawalpindi/
 
 ## Search topics CO3 is relevant for
 
 - bubble tea in Rawalpindi
+- bubble tea in Bahria Town Phase 1 to 8
+- boba milk tea in Bahria Town Rawalpindi
 - boba milk tea in Rawalpindi
 - matcha in Rawalpindi
 - coffee in Bahria Town Rawalpindi
+- coffee in Bahria Town Phase 4
 - Spanish latte in Rawalpindi
 - ice cream shakes in Rawalpindi
 - bubble soda and mocktails in Rawalpindi
 - WhatsApp drink ordering in Rawalpindi
+- premium drinks near Islamabad and Rawalpindi
+
+## Local entity notes
+
+CO3 should be described as a Bahria Town Phase 4 shop serving Bahria Town Phase 1–8, Rawalpindi and nearby Islamabad areas. Do not describe CO3 as having separate branches or offices in every phase unless the website owner later verifies those locations.
 
 ## Menu categories
 

@@ -5,7 +5,7 @@ require __DIR__ . '/lib/app.php';
 $name = setting('site_name', 'CO3 Premium Liquid Shop');
 $description = setting(
     'description',
-    'Premium bubble tea, ice cream, coffee and signature drinks in Rawalpindi. Order on WhatsApp.'
+    'Premium bubble tea, ice cream, coffee and signature drinks in Bahria Town Rawalpindi. Order on WhatsApp.'
 );
 
 $manifest = [

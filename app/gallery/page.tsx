@@ -9,7 +9,7 @@ import { SITE } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Gallery — The CO3 Look',
   description:
-    'A visual taste of CO3 Premium Liquid Shop: blueberry boba pours, whisked matcha, espresso extraction, pistachio scoops and more. Premium drinks, photographed in Rawalpindi.',
+    'A visual taste of CO3 Premium Liquid Shop: real Bahria Town Rawalpindi storefront, boba pours, matcha, espresso, sodas, scoops and friends at CO3.',
   alternates: { canonical: '/gallery/' },
 };
 
@@ -18,7 +18,7 @@ export default function GalleryPage() {
     '@context': 'https://schema.org',
     '@type': 'ImageGallery',
     name: 'CO3 Premium Liquid Shop Gallery',
-    description: 'Premium bubble tea, coffee and ice cream at CO3 Premium Liquid Shop, Rawalpindi.',
+    description: 'Premium bubble tea, coffee and ice cream at CO3 Premium Liquid Shop in Bahria Town Rawalpindi.',
     image: GALLERY.map((g) => `${SITE.domain}/images/gallery/${g.id}.webp`),
   };
 

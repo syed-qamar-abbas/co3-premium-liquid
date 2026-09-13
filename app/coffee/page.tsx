@@ -4,9 +4,9 @@ import { byCategories } from '@/lib/products';
 import { breadcrumbSchema, jsonLd, productSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Coffee — Single-Origin Espresso, Hot & Iced',
+  title: 'Coffee in Bahria Town — Single-Origin Espresso, Hot & Iced',
   description:
-    'Specialty coffee near Bahria Town, Rawalpindi: Spanish Latte, Cappuccino, Iced Caramel Macchiato and Americano, pulled from single-origin espresso. Hot or iced. Order on WhatsApp.',
+    'Specialty coffee in Bahria Town Rawalpindi: Spanish Latte, Cappuccino, Iced Caramel Macchiato and Americano. Order across Bahria Phase 1–8 on WhatsApp.',
   alternates: { canonical: '/coffee/' },
 };
 
@@ -26,7 +26,7 @@ export default function CoffeePage() {
       <CategoryView
         eyebrow="Single-Origin"
         title="Coffee, pulled with precision"
-        intro="Single-origin beans, dialled-in shots and properly steamed milk. From a velvet Spanish Latte to a clean, honest Americano — the best coffee near Bahria Town, hot or over ice."
+        intro="Single-origin beans, dialled-in shots and properly steamed milk. From a velvet Spanish Latte to a clean, honest Americano — premium coffee near Bahria Town Phase 1–8, hot or over ice."
         breadcrumb={[
           { name: 'Home', href: '/' },
           { name: 'Coffee', href: '/coffee/' },

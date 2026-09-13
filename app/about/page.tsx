@@ -11,7 +11,7 @@ import Counter from '@/components/Counter';
 export const metadata: Metadata = {
   title: 'About CO3 — Our Story',
   description:
-    'CO3 Premium Liquid Shop was created for people who appreciate moments, flavours and experiences. Learn the story behind Rawalpindi’s premium bubble tea, coffee and ice cream destination.',
+    'CO3 Premium Liquid Shop was created for people who appreciate moments, flavours and experiences. Learn the story behind Bahria Town Rawalpindi’s premium bubble tea, coffee and ice cream destination.',
   alternates: { canonical: '/about/' },
 };
 

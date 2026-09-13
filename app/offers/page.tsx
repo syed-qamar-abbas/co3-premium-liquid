@@ -7,9 +7,9 @@ import { OFFERS } from '@/lib/content';
 import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Seasonal Offers & Deals',
+  title: 'Seasonal Offers & Deals in Bahria Town',
   description:
-    'Current deals at CO3 Premium Liquid Shop: Buy 2 Get 1 Free bubble tea, Matcha Mondays 20% off, family scoop packs and a student special. Claim instantly on WhatsApp in Rawalpindi.',
+    'Current CO3 deals in Bahria Town Rawalpindi: Buy 2 Get 1 Free bubble tea, Matcha Mondays, family scoop packs and student specials. Claim on WhatsApp.',
   alternates: { canonical: '/offers/' },
 };
 
