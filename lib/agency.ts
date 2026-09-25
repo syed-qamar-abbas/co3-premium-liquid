@@ -27,9 +27,9 @@ export interface AgencyAttributionConfig {
 }
 
 export const AGENCY_ATTRIBUTION: AgencyAttributionConfig = {
-  agencyName: 'Creative Media',
+  agencyName: 'Crea8iv Media',
   legalName: 'Crea8iv Media',
-  alternateNames: ['Crea8iv Media'],
+  alternateNames: [],
   agencyUrl: 'https://crea8ivmedia.com/',
   attributionType: 'homepage',
   clientSlug: 'co3-premium-liquid-shop',
