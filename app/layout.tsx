@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import Script from 'next/script';
 import './globals.css';
 
 import { SITE } from '@/lib/site';
@@ -21,6 +22,8 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import MobileBottomBar from '@/components/MobileBottomBar';
 import PWAInstallPrompt from '@/components/PWAInstallPrompt';
 import ServiceWorkerRegister from '@/components/ServiceWorkerRegister';
+
+const CLARITY_PROJECT_ID = 'ynq19rcsf5';
 
 export const viewport: Viewport = {
   themeColor: '#005F68',
@@ -117,6 +120,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+        <Script
+          id="microsoft-clarity"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "${CLARITY_PROJECT_ID}");
+            `,
+          }}
+        />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[200] focus:rounded-full focus:bg-gold focus:px-4 focus:py-2 focus:text-ink"
