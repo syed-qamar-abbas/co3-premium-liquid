@@ -60,6 +60,10 @@ function GalleryTile({ t, i }: { t: Tile; i: number }) {
       {!failed && (
         <img
           src={t.src}
+          srcSet={`${t.src.replace('.webp', '-480.webp')} 480w, ${t.src.replace('.webp', '-768.webp')} 768w, ${t.src} 1000w`}
+          sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 33vw"
+          width={1000}
+          height={1250}
           alt={`${t.label} — CO3 Premium Liquid Shop`}
           loading="lazy"
           decoding="async"

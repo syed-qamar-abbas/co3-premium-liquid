@@ -35,11 +35,11 @@ export default function ReviewsCarousel() {
             >
               “
             </motion.span>
-            <p className="mt-2 flex-1 text-[15px] leading-relaxed text-ink/75">{r.quote}</p>
+            <p className="mt-2 flex-1 text-[15px] leading-relaxed text-ink/85">{r.quote}</p>
             <div className="mt-5 flex items-center justify-between">
               <div>
                 <p className="font-display text-lg text-teal">{r.name}</p>
-                <p className="text-xs text-ink/50">{r.location}</p>
+                <p className="text-xs text-ink/70">{r.location}</p>
               </div>
               <span className="text-sm text-gold">{'★'.repeat(r.rating)}</span>
             </div>

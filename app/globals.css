@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,12 +14,6 @@
   --gold: #d4a537;
   --ink: #111111;
   --nav-h: 76px;
-  /* Keep the brand families offline-safe for static export builds. If the
-     named family exists on the host/device it is used; the fallbacks keep
-     layout stable when it does not. */
-  --font-playfair: 'Playfair Display';
-  --font-montserrat: 'Montserrat';
-  --font-allura: 'Allura';
 }
 
 @layer base {
@@ -82,7 +74,7 @@
   }
 
   .eyebrow {
-    @apply font-body text-xs font-semibold uppercase tracking-luxe text-gold;
+    @apply font-body text-xs font-semibold uppercase tracking-luxe text-[#7B5A18];
   }
 
   /* ── Buttons ─────────────────────────────────────────────── */
@@ -103,7 +95,7 @@
     @apply btn border border-teal/30 bg-transparent text-teal hover:border-teal hover:bg-teal hover:text-cream-warm;
   }
   .btn-whatsapp {
-    @apply btn bg-[#25D366] text-white shadow-gold hover:brightness-105;
+    @apply btn bg-[#075E54] text-cream-warm shadow-gold hover:bg-[#064C45];
   }
 
   /* ── Glass card with reflection sweep ────────────────────── */
@@ -180,6 +172,27 @@
   }
   .underline-gold:hover {
     background-size: 100% 2px;
+  }
+}
+
+@layer components {
+  .swiper-pagination {
+    @apply flex items-center justify-center gap-2;
+  }
+
+  .swiper-pagination-bullet {
+    width: 24px !important;
+    height: 24px !important;
+    margin: 0 !important;
+    border: 1px solid rgba(0, 95, 104, 0.28);
+    background: rgba(0, 95, 104, 0.16) !important;
+    opacity: 1 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    border-color: rgba(212, 165, 55, 0.9);
+    background: var(--teal) !important;
+    box-shadow: 0 0 0 3px rgba(212, 165, 55, 0.16);
   }
 }
 

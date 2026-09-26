@@ -32,21 +32,11 @@ export default function Hero() {
       <div className="container-luxe relative z-10 grid items-center gap-12 py-16 lg:grid-cols-2">
         {/* Copy */}
         <div className="text-center lg:text-left">
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="font-script text-4xl text-teal sm:text-5xl"
-          >
+          <p className="font-script text-4xl text-teal sm:text-5xl">
             {s.taglineScript}
-          </motion.p>
+          </p>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 28 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-2 font-display text-fluid-hero font-bold leading-[0.95] text-teal"
-          >
+          <h1 className="mt-2 font-display text-fluid-hero font-bold leading-[0.95] text-teal">
             {line1}
             {line2 && (
               <>
@@ -54,24 +44,14 @@ export default function Hero() {
                 <span className="text-shimmer">{line2}.</span>
               </>
             )}
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-ink/70 sm:text-lg lg:mx-0"
-          >
+          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-ink/75 sm:text-lg lg:mx-0">
             {s.description}{' '}
             <span className="font-semibold text-teal">{s.vibe}</span>
-          </motion.p>
+          </p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-9 flex flex-wrap items-center justify-center gap-4 lg:justify-start"
-          >
+          <div className="mt-9 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
             <MagneticButton href="/menu/" as="a" className="btn-teal">
               Explore Menu
             </MagneticButton>
@@ -83,21 +63,16 @@ export default function Hero() {
             >
               <WhatsAppIcon /> Order on WhatsApp
             </MagneticButton>
-          </motion.div>
+          </div>
 
           {/* trust strip */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.7 }}
-            className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-ink/60 lg:justify-start"
-          >
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-ink/70 lg:justify-start">
             <span className="flex items-center gap-1.5">
               <span className="text-gold">★★★★★</span> 4.9 · 1000+ orders
             </span>
             <span>🍓 Real fruits & flavours</span>
             <span>⚡ Fast WhatsApp ordering</span>
-          </motion.div>
+          </div>
         </div>
 
         {/* Real storefront portrait — a calmer, faster hero visual than autoplay video */}
@@ -118,8 +93,13 @@ export default function Hero() {
               <div className="relative aspect-[4/5] w-full">
                 <img
                   src="/images/gallery/g-05.webp"
+                  srcSet="/images/gallery/g-05-480.webp 480w, /images/gallery/g-05-768.webp 768w, /images/gallery/g-05.webp 1000w"
+                  sizes="(max-width: 1024px) 92vw, 464px"
+                  width={1000}
+                  height={1250}
                   alt="The CO3 storefront glowing at night with friends holding drinks"
-                  loading="lazy"
+                  loading="eager"
+                  fetchPriority="high"
                   decoding="async"
                   className="h-full w-full object-cover object-center"
                 />
@@ -142,6 +122,10 @@ export default function Hero() {
               <div className="aspect-[4/5]">
                 <img
                   src="/images/gallery/g-02.webp"
+                  srcSet="/images/gallery/g-02-480.webp 480w, /images/gallery/g-02-768.webp 768w, /images/gallery/g-02.webp 1000w"
+                  sizes="160px"
+                  width={1000}
+                  height={1250}
                   alt="Friends enjoying drinks together at CO3"
                   loading="lazy"
                   decoding="async"
@@ -159,7 +143,7 @@ export default function Hero() {
               className="absolute -bottom-4 left-3 rounded-2xl bg-cream-warm px-4 py-2.5 shadow-lift sm:-left-10"
             >
               <span className="font-script text-2xl text-teal">tiny bubbles,</span>
-              <span className="block font-script text-2xl leading-none text-gold">big mood ♡</span>
+              <span className="block font-script text-2xl leading-none text-[#7B5A18]">big mood ♡</span>
             </motion.div>
           </motion.div>
         </div>

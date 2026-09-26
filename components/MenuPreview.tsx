@@ -53,6 +53,10 @@ export default function MenuPreview() {
           <div className="relative aspect-[16/8] sm:aspect-auto">
             <img
               src="/images/gallery/g-00.webp"
+              srcSet="/images/gallery/g-00-480.webp 480w, /images/gallery/g-00-768.webp 768w, /images/gallery/g-00.webp 1000w"
+              sizes="(max-width: 640px) 90vw, 52vw"
+              width={1000}
+              height={1250}
               alt="Three colourful CO3 summer drinks on a tray"
               loading="lazy"
               decoding="async"
@@ -61,9 +65,9 @@ export default function MenuPreview() {
             <div className="absolute inset-0 bg-gradient-to-r from-transparent to-teal/45" />
           </div>
           <div className="flex flex-col justify-center p-6 text-cream-warm sm:p-8">
-            <span className="eyebrow">Start with something cold</span>
+            <span className="eyebrow text-gold-soft">Start with something cold</span>
             <p className="mt-2 font-display text-2xl leading-tight sm:text-3xl">Good vibes. Great drinks.</p>
-            <p className="mt-3 text-sm leading-relaxed text-cream/70">A little sip of everything we do best — fresh, playful and made for your mood.</p>
+            <p className="mt-3 text-sm leading-relaxed text-cream/90">A little sip of everything we do best — fresh, playful and made for your mood.</p>
           </div>
         </div>
 
@@ -83,6 +87,10 @@ export default function MenuPreview() {
                 {CATEGORY_IMAGE[c.id] && (
                   <img
                     src={CATEGORY_IMAGE[c.id]}
+                    srcSet={`${CATEGORY_IMAGE[c.id].replace('.webp', '-320.webp')} 320w, ${CATEGORY_IMAGE[c.id].replace('.webp', '-640.webp')} 640w, ${CATEGORY_IMAGE[c.id]} 1080w`}
+                    sizes="(max-width: 640px) 31vw, (max-width: 1024px) 23vw, 153px"
+                    width={320}
+                    height={320}
                     alt=""
                     loading="lazy"
                     decoding="async"

@@ -83,9 +83,11 @@ export default function BahriaTownRawalpindiPage() {
             <div className="relative overflow-hidden rounded-[2rem] border border-gold/20 bg-teal-luxe p-3 shadow-lift sm:rounded-[2.75rem]">
               <img
                 src="/images/gallery/g-05.webp"
+                srcSet="/images/gallery/g-05-480.webp 480w, /images/gallery/g-05-768.webp 768w, /images/gallery/g-05.webp 1000w"
+                sizes="(max-width: 1024px) 92vw, 580px"
                 alt="CO3 Premium Liquid Shop storefront in Bahria Town Rawalpindi at night"
-                width={1200}
-                height={900}
+                width={1000}
+                height={1250}
                 loading="lazy"
                 decoding="async"
                 className="aspect-[4/3] w-full rounded-[1.5rem] object-cover sm:rounded-[2.25rem]"

@@ -21,7 +21,7 @@ export default function LuxuryShowcase() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="eyebrow"
+            className="eyebrow text-gold-soft"
           >
             The CO3 Standard
           </motion.span>
@@ -41,7 +41,7 @@ export default function LuxuryShowcase() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="mt-6 max-w-xl text-cream/75"
+            className="mt-6 max-w-xl text-cream/90"
           >
             Lychee, strawberry, fresh mint, single-origin beans and sun-ripe mango — sourced with
             intent, prepared with patience, served at their peak.
@@ -65,6 +65,10 @@ export default function LuxuryShowcase() {
           <div className="absolute inset-x-0 bottom-0 top-8 overflow-hidden rounded-[2rem] border border-gold/35 shadow-lift sm:left-12">
             <img
               src="/images/gallery/g-05.webp"
+              srcSet="/images/gallery/g-05-480.webp 480w, /images/gallery/g-05-768.webp 768w, /images/gallery/g-05.webp 1000w"
+              sizes="(max-width: 1024px) 92vw, 590px"
+              width={1000}
+              height={1250}
               alt="The CO3 storefront and friends sharing drinks"
               loading="lazy"
               decoding="async"
@@ -77,10 +81,14 @@ export default function LuxuryShowcase() {
           </div>
           <div className="absolute left-0 top-0 w-32 overflow-hidden rounded-2xl border-4 border-teal shadow-lift sm:w-44">
             <div className="aspect-[4/5]">
-              <img
-                src="/images/gallery/g-02.webp"
-                alt="Three friends enjoying drinks at CO3"
-                loading="lazy"
+                <img
+                  src="/images/gallery/g-02.webp"
+                  srcSet="/images/gallery/g-02-480.webp 480w, /images/gallery/g-02-768.webp 768w, /images/gallery/g-02.webp 1000w"
+                  sizes="(max-width: 640px) 128px, 176px"
+                  width={1000}
+                  height={1250}
+                  alt="Three friends enjoying drinks at CO3"
+                  loading="lazy"
                 decoding="async"
                 className="h-full w-full object-cover"
               />

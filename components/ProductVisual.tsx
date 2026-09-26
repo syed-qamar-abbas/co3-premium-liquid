@@ -29,6 +29,11 @@ export default function ProductVisual({
   const [loaded, setLoaded] = useState(false);
   const [failed, setFailed] = useState(false);
   const showImage = Boolean(image) && !failed;
+  const enhancedImage = image?.startsWith('/images/products-enhanced/') && image.endsWith('.webp');
+  const responsiveSrcSet =
+    enhancedImage && image
+      ? `${image.replace('.webp', '-320.webp')} 320w, ${image.replace('.webp', '-640.webp')} 640w, ${image} 1080w`
+      : undefined;
 
   return (
     <div
@@ -51,6 +56,10 @@ export default function ProductVisual({
       {showImage && (
         <img
           src={image}
+          srcSet={responsiveSrcSet}
+          sizes="(max-width: 640px) 31vw, (max-width: 1024px) 23vw, 240px"
+          width={640}
+          height={640}
           alt={`${name} — CO3 Premium Liquid Shop`}
           loading="lazy"
           decoding="async"

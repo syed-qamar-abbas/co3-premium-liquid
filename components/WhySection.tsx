@@ -48,6 +48,10 @@ export default function WhySection() {
           <div className="group relative aspect-[16/9] overflow-hidden rounded-[2rem] bg-teal shadow-glass sm:aspect-[16/7]">
             <img
               src="/images/gallery/g-03.webp"
+              srcSet="/images/gallery/g-03-480.webp 480w, /images/gallery/g-03-768.webp 768w, /images/gallery/g-03.webp 1000w"
+              sizes="(max-width: 640px) 90vw, 58vw"
+              width={1000}
+              height={1250}
               alt="A refreshing mint lemonade on a sunny day"
               loading="lazy"
               decoding="async"
@@ -55,13 +59,17 @@ export default function WhySection() {
             />
             <div className="absolute inset-0 bg-gradient-to-r from-teal-deep/75 via-transparent to-transparent" />
             <div className="absolute inset-y-0 left-5 flex max-w-[13rem] flex-col justify-center sm:left-8 sm:max-w-xs">
-              <span className="eyebrow">Real refreshment</span>
+              <span className="eyebrow text-gold-soft">Real refreshment</span>
               <p className="mt-2 font-display text-2xl leading-tight text-cream-warm sm:text-3xl">Made for golden-hour moods.</p>
             </div>
           </div>
           <div className="group relative aspect-[16/9] overflow-hidden rounded-[2rem] bg-gold shadow-gold sm:aspect-[4/3]">
             <img
               src="/images/gallery/g-09.webp"
+              srcSet="/images/gallery/g-09-480.webp 480w, /images/gallery/g-09-768.webp 768w, /images/gallery/g-09.webp 1000w"
+              sizes="(max-width: 640px) 90vw, 38vw"
+              width={1000}
+              height={750}
               alt="Colourful summer refresher drinks the CO3 way"
               loading="lazy"
               decoding="async"
@@ -85,7 +93,7 @@ export default function WhySection() {
               <p className="font-display text-4xl font-bold text-gold sm:text-5xl">
                 <Counter value={s.value} suffix={s.suffix} />
               </p>
-              <p className="mt-2 text-xs uppercase tracking-wide2 text-cream/70 sm:text-sm">
+              <p className="mt-2 text-xs uppercase tracking-wide2 text-cream/90 sm:text-sm">
                 {s.label}
               </p>
             </div>

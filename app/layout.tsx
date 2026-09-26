@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import { Allura, Montserrat, Playfair_Display } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
 
@@ -24,6 +25,27 @@ import PWAInstallPrompt from '@/components/PWAInstallPrompt';
 import ServiceWorkerRegister from '@/components/ServiceWorkerRegister';
 
 const CLARITY_PROJECT_ID = 'ynq19rcsf5';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['500', '600', '700', '800'],
+  display: 'swap',
+  variable: '--font-playfair',
+});
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  display: 'swap',
+  variable: '--font-montserrat',
+});
+
+const allura = Allura({
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+  variable: '--font-allura',
+});
 
 export const viewport: Viewport = {
   themeColor: '#005F68',
@@ -110,10 +132,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en-PK"
-      className="co3-fonts"
+      className={`${playfair.variable} ${montserrat.variable} ${allura.variable} co3-fonts`}
     >
       <head>
-        <link rel="preconnect" href="https://wa.me" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={jsonLd(siteSchema)}

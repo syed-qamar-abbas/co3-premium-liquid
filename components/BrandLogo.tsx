@@ -42,10 +42,19 @@ export default function BrandLogo({
   }, [variant]);
 
   const src = logo || DEFAULT_CO3_LOGO;
+  const builtInLogo = src === DEFAULT_CO3_LOGO;
 
   return (
     <img
       src={src}
+      srcSet={
+        builtInLogo
+          ? '/images/brand/co3-logo-transparent-160.png 160w, /images/brand/co3-logo-transparent-320.png 320w, /images/brand/co3-logo-transparent.png 778w'
+          : undefined
+      }
+      sizes={variant === 'nav' ? '(max-width: 640px) 112px, 140px' : '(max-width: 640px) 160px, 210px'}
+      width={variant === 'nav' ? 140 : 210}
+      height={variant === 'nav' ? 106 : 158}
       alt="CO3 Premium Liquid Shop"
       loading={variant === 'nav' ? 'eager' : 'lazy'}
       decoding="async"

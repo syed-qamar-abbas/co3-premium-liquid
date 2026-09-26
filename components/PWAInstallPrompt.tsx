@@ -54,6 +54,8 @@ export default function PWAInstallPrompt() {
           <img
             src={DEFAULT_CO3_APP_ICON}
             alt="CO3"
+            width={192}
+            height={192}
             loading="lazy"
             decoding="async"
             className="h-full w-full object-contain p-1"

@@ -69,13 +69,13 @@ export default function Footer() {
         {/* Link columns */}
         {COLS.map((col) => (
           <div key={col.title} className="md:col-span-2">
-            <h4 className="font-display text-lg text-gold">{col.title}</h4>
+            <h2 className="font-display text-lg text-gold-soft">{col.title}</h2>
             <ul className="mt-4 space-y-2.5">
               {col.links.map((l) => (
                 <li key={l.href}>
                   <Link
                     href={l.href}
-                    className="text-sm text-cream/65 transition-colors hover:text-cream-warm"
+                    className="text-sm text-cream/85 transition-colors hover:text-cream-warm"
                   >
                     {l.label}
                   </Link>
@@ -87,8 +87,8 @@ export default function Footer() {
 
         {/* Contact */}
         <div className="md:col-span-4">
-          <h4 className="font-display text-lg text-gold">Visit & Order</h4>
-          <ul className="mt-4 space-y-3 text-sm text-cream/70">
+          <h2 className="font-display text-lg text-gold-soft">Visit & Order</h2>
+          <ul className="mt-4 space-y-3 text-sm text-cream/85">
             <li>📍 {s.address}</li>
             <li>
               📞{' '}
@@ -115,7 +115,7 @@ export default function Footer() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 items-center rounded-full border border-cream/20 px-4 text-xs font-medium text-cream/70 transition hover:border-gold hover:text-gold"
+                className="flex h-10 items-center rounded-full border border-cream/30 px-4 text-xs font-medium text-cream/85 transition hover:border-gold hover:text-gold-soft"
               >
                 {social.label}
               </a>
@@ -125,7 +125,7 @@ export default function Footer() {
       </div>
 
       <div className="divider-gold" />
-      <div className="container-luxe flex flex-col items-center justify-between gap-3 py-6 text-xs text-cream/50 lg:flex-row">
+      <div className="container-luxe flex flex-col items-center justify-between gap-3 py-6 text-xs text-cream/75 lg:flex-row">
         <p>© {new Date().getFullYear()} {s.siteName}. All rights reserved.</p>
         <FooterAttribution />
         <p>Crafted fresh in Rawalpindi, Pakistan · Made with 🤍 + 🥤</p>

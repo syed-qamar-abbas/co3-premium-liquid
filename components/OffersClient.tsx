@@ -28,6 +28,16 @@ export default function OffersClient({ limit }: { limit?: number }) {
   }, []);
 
   const shown = limit ? offers.slice(0, limit) : offers;
+  const getOfferSrcSet = (src?: string) => {
+    if (!src?.endsWith('.webp')) return undefined;
+    if (src.startsWith('/images/gallery/')) {
+      return `${src.replace('.webp', '-480.webp')} 480w, ${src.replace('.webp', '-768.webp')} 768w, ${src} 1000w`;
+    }
+    if (src.startsWith('/images/products-enhanced/')) {
+      return `${src.replace('.webp', '-320.webp')} 320w, ${src.replace('.webp', '-640.webp')} 640w, ${src} 1080w`;
+    }
+    return undefined;
+  };
 
   return (
     <div className="grid gap-6 sm:grid-cols-2">
@@ -46,6 +56,10 @@ export default function OffersClient({ limit }: { limit?: number }) {
             <div className="relative aspect-[16/10] w-full overflow-hidden">
               <img
                 src={offer.image}
+                srcSet={getOfferSrcSet(offer.image)}
+                sizes="(max-width: 640px) 92vw, 50vw"
+                width={1000}
+                height={626}
                 alt={offer.title}
                 loading="lazy"
                 decoding="async"

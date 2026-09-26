@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import SectionHeading from './SectionHeading';
 import { WhatsAppIcon } from './OrderModal';
@@ -14,6 +15,54 @@ const REELS = [
   { src: '/videos/caramel-matcha.mp4', poster: '/images/brand/caramel-matcha-poster.webp', label: 'Caramel Iced Matcha' },
   { src: '/videos/icecream-shake.mp4', poster: '/images/brand/icecream-shake-poster.webp', label: 'Ice Cream Scoop Shake' },
 ];
+
+function LazyReelVideo({ src, poster, label }: { src: string; poster: string; label: string }) {
+  const ref = useRef<HTMLVideoElement>(null);
+  const [loadVideo, setLoadVideo] = useState(false);
+
+  useEffect(() => {
+    const video = ref.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setLoadVideo(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '220px 0px' },
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const video = ref.current;
+    if (!video || !loadVideo) return;
+    video.load();
+    video.play().catch(() => undefined);
+  }, [loadVideo]);
+
+  return (
+    <video
+      ref={ref}
+      aria-label={`${label} product reel, decorative video with no spoken audio`}
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="none"
+      poster={poster}
+      className="block h-full w-full object-cover"
+      style={{ aspectRatio: '9 / 16' }}
+    >
+      {loadVideo && <source src={src} type="video/mp4" />}
+      <track kind="captions" src="/captions/co3-reels.vtt" srcLang="en" label="English captions" />
+    </video>
+  );
+}
 
 export default function Reels() {
   const s = useSettings();
@@ -38,18 +87,7 @@ export default function Reels() {
                 i === 2 ? 'col-span-2 mx-auto w-1/2 lg:col-span-1 lg:w-full' : ''
               }`}
             >
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="metadata"
-                poster={r.poster}
-                className="block h-full w-full object-cover"
-                style={{ aspectRatio: '9 / 16' }}
-              >
-                <source src={r.src} type="video/mp4" />
-              </video>
+              <LazyReelVideo src={r.src} poster={r.poster} label={r.label} />
               <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                 <span className="font-script text-2xl text-cream-warm">{r.label}</span>
               </div>
